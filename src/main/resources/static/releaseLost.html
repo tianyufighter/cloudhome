@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<title>云客在线服务系统——发布信息</title>
+	<meta name="description" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="lost/css/bootstrap.min.css" />
+	<!-- Style CSS -->
+	<link rel="stylesheet" href="lost/css/style.css" />
+</head>
+<body class="bg-img body-bg">
+	<div class="canvas-area">
+		<canvas class="constellation"></canvas>
+	</div>
+	<div class="bg-img color-white main-container">
+		<!-- 顶部导航栏-->
+		<div id="header" class="style-1">
+			<div class="container">
+				<nav class="navbar navbar-expand-lg">
+<!--					<a class="navbar-brand" href="#"><img src="lost/img/logo.png" alt="" /></a>-->
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icofont icofont-navigation-menu"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="nav nav-pills mx-auto nav-style1" id="pills-tab" role="tablist">
+							<li class="nav-item" role="presentation">
+								<a class="nav-link nav-menu" id="pills-contact-tab" data-toggle="pill" href="shiwuzhaoling.html" role="tab" aria-controls="pills-contact" aria-selected="false">失物招领界面</a>
+							</li>
+						</ul>
+					</div>
+<!--					<div class="head-contact-us"><span>+88 689 738 943</span></div>-->
+				</nav>
+			</div>
+		</div>
+
+		<!-- BODY PART START -->
+		<div class="tab-content" id="pills-tabContent">
+			<!-- 界面 -->
+			<div class="tab-pane fade  show active" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+				<div id="main-content-contact" class="xs-no-positioning fixed fixed-middle">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<div class="title">
+									<p class="contact-small-title">失物招领发布处</p>
+									<span class="contact-main-title">Come and contact us</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-12">
+								<div class="contact-form-main-div">
+									<!--发布失物招领信息界面-->
+									<form id="form" class="clearfix text-center" role="form">
+										<div class="row">
+											<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 form-field">
+												<input type="text" id="name" name="name" class="form-control" placeholder="张三" /><i class="icofont icofont-user"></i>
+											</div>
+<!--											<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 form-field">-->
+<!--												<input type="email" id="email_address" name="email" class="form-control" placeholder="support24@gmail.com" /><i class="icofont icofont-envelope"></i>-->
+<!--											</div>-->
+
+											<!--地址-->
+											<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 form-field">
+												<input type="text" id="address" name="address" class="form-control" placeholder="西南科技大学东六宿舍楼" /><i class="icofont icofont-location-pin"></i>
+											</div>
+											<!--图片-->
+											<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 form-field">
+												<input type="file"  name="infoImage" class="form-control"/><i class="icofont"></i>
+											</div>
+											<!--输入信息-->
+											<div class="col-md-12 col-lg-12 col-xl-12 form-field">
+												<textarea id="message" name="message" class="form-control" placeholder="请输入描述信息" rows="7"></textarea>
+											</div>
+										</div>
+										<!--发布按钮-->
+										<input type="button" class="fabu btn-primary btn" value="发布" style="width: 100px;height: 40px;">
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- BODY PART END -->
+	</div>
+	<!-- jQuery -->
+	<script src="lost/js/jquery-3.2.1.min.js"></script>
+	<!-- stars JS -->
+	<script src="lost/js/stars.js"></script>
+	<script>
+		$('.canvas-area canvas').constellation({
+			star: {
+				width: 3
+			},
+			line: {
+				color: 'rgba(255,255,255,0.7)'
+			},
+			length: (window.innerWidth / 9),
+			radius: (window.innerWidth / 5)
+		});
+	</script>
+</body>
+<script>
+	$(".fabu").click(function() {
+		var formData = new FormData(document.getElementById("form"));
+		formData.forEach(function(value,key){
+			console.log(key,value);
+		})
+		$.ajax({
+			url: "http://39.108.117.49/insertOneInfo",
+			type: "POST",
+			dataType : "json",
+			processData: false,
+			contentType: false,
+			data:formData,
+			success: function(data){
+				alert("商品发布成功");
+				$(':input','#form').not(':button, :submit, :reset').val('').removeAttr('checked').removeAttr('selected');
+				window.location.href = "/shiwuzhaoling.html";
+			},
+			error: function() {
+				alert("服务器异常...");
+			}
+		});
+	})
+</script>
+</html>

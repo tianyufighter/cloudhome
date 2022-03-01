@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.tianyufighter.springboot.dao.CardDao">
+    <resultMap id="BaseResult" type="com.tianyufighter.springboot.domain.Card">
+        <id column="id" property="id"/>
+        <result column="username" property="username"/>
+        <result column="img_path" property="imgPath"/>
+        <result column="content" property="content"/>
+        <result column="title" property="title"/>
+        <result column="comment_count" property="commentCount"/>
+        <result column="favorite_count" property="favoriteCount"/>
+        <result column="outgoing" property="outgoing"/>
+        <result column="note" property="note"/>
+        <result column="release_time" property="releaseTime"/>
+        <result column="card_type" property="cardType"/>
+    </resultMap>
+    <sql id="base_card">
+        username, img_path, content, title, comment_count, favorite_count, outging, note, release_time, card_type
+    </sql>
+    <insert id="insertCard" parameterType="User" useGeneratedKeys="true" keyProperty="id">
+        insert into
+        card(username, img_path, content, title, comment_count, favorite_count, outgoing, note, release_time, card_type)
+        values
+        (#{username}, #{imgPath}, #{content}, #{title}, #{commentCount}, #{favoriteCount}, #{outgoing}, #{note}, #{releaseTime}, #{cardType});
+    </insert>
+    <select id="query"  resultMap="BaseResult">
+        select * from card order by id desc limit ${num * 4}, 4;
+    </select>
+    <select id="queryId" resultType="int">
+        select id from card where username = #{username} and title = #{title};
+    </select>
+</mapper>

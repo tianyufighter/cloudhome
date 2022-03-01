@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.tianyufighter.springboot.dao.JobDao">
+    <resultMap id="BaseResult" type="com.tianyufighter.springboot.domain.Job">
+        <id column="id" property="id"/>
+        <result column="username" property="username"/>
+        <result column="phone" property="phone"/>
+        <result column="address" property="address"/>
+        <result column="photo" property="photo"/>
+        <result column="title" property="title"/>
+        <result column="content" property="content"/>
+        <result column="release_time" property="releaseTime"/>
+    </resultMap>
+    <insert id="insertJob" parameterType="Job" useGeneratedKeys="true" keyProperty="id">
+        insert into
+        job(username, phone, address, photo, title, content, release_time)
+        values
+        (#{username}, #{phone}, #{address}, #{photo}, #{title}, #{content}, #{releaseTime});
+    </insert>
+    <select id="queryAllJob"  resultMap="BaseResult">
+        select * from job
+    </select>
+</mapper>

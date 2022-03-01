@@ -1,0 +1,890 @@
+﻿<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>二手商品</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- All css -->
+    <!-- Bootstrap css-->
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+      <!-- fontawesome css -->
+      <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
+      <!-- flaticon css -->
+      <link rel="stylesheet" href="assets/fonts/flaticon/flaticon.css">
+      <!-- magnific css-->
+      <link rel="stylesheet" href="assets/css/magnific-popup.css">
+      <!-- slick css-->
+      <link rel="stylesheet" href="assets/css/slick.css">
+      <!-- swiper slider css-->
+      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+      <!-- nice-select css-->
+      <link rel="stylesheet" href="assets/css/nice-select.css">
+      <!-- jquery.nice-number css-->
+      <link rel="stylesheet" href="assets/css/jquery.nice-number.css">
+      <!-- jquery-ui css-->
+      <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+      <!-- default css-->
+      <link rel="stylesheet" href="assets/css/default.css">
+      <!-- style css-->
+      <link rel="stylesheet" href="assets/css/style.css">
+    <!-- jquery  -->
+    <script src="common/js/jquery-1.10.2.js" id = "js0"></script>
+
+    <!--modernizr js-->
+    <script src="assets/js/vendor/modernizr-3.6.0.min.js" id = "js1"></script>
+    <!-- Bootstrap js  -->
+    <script src="assets/js/vendor/popper.min.js" id = "js2"></script>
+    <script src="assets/js/vendor/bootstrap.min.js" id = "js3"></script>
+    <!-- Magnific-popup js-->
+    <script src="assets/js/vendor/jquery.magnific-popup.min.js" id = "js4"></script>
+    <!-- Slick js-->
+    <script src="assets/js/vendor/slick.min.js" id = "js5"></script>
+    <!-- swiper slider js-->
+    <script src="assets/js/vendor/swiper-bundle.min.js"  id = "js6"></script>
+    <!-- Isotope js-->
+    <script src="assets/js/vendor/isotope.pkgd.min.js" id = "js7"></script>
+    <!-- Slick js-->
+    <script src="assets/js/vendor/imagesloaded.pkgd.min.js" id = "js8"></script>
+    <!-- nice select js-->
+    <script src="assets/js/vendor/jquery.nice-select.min.js" id = "js9"></script>
+    <!-- select number -->
+    <script src="assets/js/vendor/jquery.nice-number.min.js" id = "js10"></script>
+    <!-- jquery-ui js-->
+    <script src="assets/js/vendor/jquery-ui.min.js" id = "js11"></script>
+    <!-- custom js  -->
+    <script src="assets/js/custom.js" id = "js12"></script>
+
+    <!-- 轮播图 -->
+    <link rel="stylesheet" type="text/css" href="css/public.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <script type="text/javascript" src="js/jquery1.11.3.min.js"></script>
+    <script src="js/public.js"></script>
+    <script src="js/swiper.min.js"></script>
+
+    <!-- favicon.png and root directory -->
+    <link rel="Icon" type="images/png" href="images/favicon1.png">
+    
+
+    <!-- All css here -->
+
+    <!-- bootstrap 4.0 css -->
+    <!-- <link rel="stylesheet" href="css/product/bootstrap.min.css"> -->
+    <!-- owl.carousel css -->
+    <link rel="stylesheet" href="css/product/owl.carousel.min.css">
+    <!-- Animate css -->
+    <link rel="stylesheet" href="css/product/animate.min.css">
+    <!-- magnific css -->
+    <link rel="stylesheet" href="css/product/magnific-popup.css">
+    <!-- meanmenu css -->
+    <link rel="stylesheet" href="css/product/meanmenu.min.css">
+    <!-- venobox css -->
+    <link rel="stylesheet" href="css/product/venobox.css">
+    <!-- Icon font css -->
+    <link rel="stylesheet" href="css/product/font-awesome.min.css">
+    <link rel="stylesheet" href="css/product/themify-icons.css">
+    <link rel="stylesheet" href="css/product/flaticon.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="css/product/style.css">
+    <!-- responsive css -->
+    <!-- <link rel="stylesheet" href="css/product/responsive.css"> -->
+    <script type="text/javascript" src="js/jquery1.11.3.min.js"></script>
+
+</head>
+
+
+<body>
+    <!-- preloader  -->
+    
+    <!-- 导航栏 -->
+    <header class="olima_header header_v1">
+      <div class="header_navigation">
+        <div class="container">
+          <div class="nav-container d-flex align-items-center justify-content-between">
+            <div class="nav-menu">
+              <!-- Navbar Close Icon -->
+              <div class="navbar-close">
+                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+              </div>
+              <!-- 导航栏按钮 -->
+              <nav class="main-menu">
+                <ul>
+                  <li class="menu-item menu-item-has-children"><a href="index.html">社区首页</a></li>
+                  <li class="menu-item menu-item-has-children static havechoose"><a href="product.html">二手商品</a></li>
+                  <li class="menu-item menu-item-has-children"><a href="shiwuzhaoling.html">失物招领</a></li>
+                  <li class="menu-item menu-item-has-children"><a href="jianzhi.html">兼职信息</a></li>
+                  <li class="menu-item menu-item-has-children"><a href="todolist.html">日程安排</a></li>
+                  <li class="menu-item menu-item-has-children"><a href="releaseGoods.html" onclick="return judgeLog()">发布商品</a></li>
+                </ul>
+              </nav>
+              <!-- 搜索框 -->
+              <div class="nav-pushed-item">
+                <div class="header_search">
+                  <form>
+                    <div class="form_group">
+                      <input type="search" class="form_control" placeholder="Hit enter to search" name="search" required>
+                      <i class="fas fa-search"></i>
+                    </div>
+                  </form>
+                </div>
+              </div>              
+            </div>
+            <div class="nav-push-item">
+              <div class="header_search">
+                <form>
+                  <div class="form_group">
+                    <input type="search" class="form_control" placeholder="Hit enter to search" name="search" required>
+                    <i class="fas fa-search"></i>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="main-menu">
+              <ul>
+              <li class="menu-item menu-item-has-children"> <a class="sign" href="register.html">进入社区</a> </li>
+              </ul>
+            </div>
+            <div class="dopebox clearfloat">
+              <div class="dope">
+                <a href="chat.html"><img src="images/dope.png" /> <span>4</span></a>
+              </div>
+              <div class="login_tou">
+                <a href="person.html"><img src="images/login.png" class="touxiang" style="height:28px;width:28px;border-radius: 50% 50%;"/></a>
+                <div class="login_down">
+                  <ul>
+                    <li><img src="images/nolog.png" class="touxiang" style="height:28px;width:28px;border-radius: 50% 50%;"/> <span class="mingcheng">超人2018</span></li>
+                    <li><a href="">个人中心</a></li>
+                    <li><a href="">设置</a></li>
+                    <li class = "quit"><a href="index.html">退出</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>            
+            <!-- Navbar Toggler -->
+            <div class="navbar-toggler">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--轮播图-->
+    <div class="banner">
+      <div class="ban_prev">
+        <img src="images/prev1.png" class="prev1" />
+        <img src="images/prev2.png" class="prev2" />
+      </div>
+      <ul class="bannerul">
+        <li>
+          <a href=""><img src="images/banner/1.jpg" /></a>
+        </li>
+        <li>
+          <a href=""><img src="images/banner/2.jpg" /></a>
+        </li>
+        <li>
+          <a href=""><img src="images/banner/3.jpg" /></a>
+        </li>
+        <li>
+          <a href=""><img src="images/banner/4.jpg" /></a>
+        </li>
+        <li>
+          <a href=""><img src="images/banner/5.jpg" /></a>
+        </li>
+        <li>
+          <a href=""><img src="images/banner/6.jpg" /></a>
+        </li>
+      </ul>
+      <ul class="num clearfloat">
+        <li class="active"><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+        <li><span></span></li>
+      </ul>
+
+      <div class="ban_next">
+        <img src="images/next1.png" class="next1" />
+        <img src="images/next2.png" class="next2" />
+      </div>
+    </div>
+    <!-- End header area -->
+     <main>
+        <!--Blog Area Start-->
+        <div class="blog-area bg-color blog-grid fix area-padding">
+            <div class="container">
+                <div class="row shangpin">
+                    <!-- Start single blog -->
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="single-blog">
+                            <div class="blog-image">
+                                <a class="image-scale" href="blog-details.html">
+                                    <img src="images/product/blog/b1.jpg" alt="">
+                                    <div class="blog-item-date">
+                                        <span class="date-type">15</span>
+                                        <span class="years-type">May, 20</span>
+                                    </div>
+                                </a>
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                       <span class="admin-type">
+                                            <i class="fa fa-user"></i>
+                                            Admin
+                                        </span>
+                                    </div>
+                                    <p>Dummy text is also used to demon strate the appea rance of different typefaces and layouts, and in general the content.</p>
+<!--                                    <a class="blog-btn anti-bttn" href="blog-details.html"> Read more</a>-->
+                                    电话:  <sapn class="blog-btn anti-bttn">+8613434343431</sapn>
+                                    <br/>
+                                    QQ:  <span class="blog-btn anti-bttn">+8613434343431</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End single blog -->
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="single-blog">
+                            <div class="blog-image">
+                                <a class="image-scale" href="blog-details.html">
+                                    <img src="images/product/blog/b2.jpg" alt="">
+                                    <div class="blog-item-date">
+                                        <span class="date-type">15</span>
+                                        <span class="years-type">Jun, 20</span>
+                                    </div>
+                                </a>
+                                <div class="blog-content">
+                                   <div class="blog-meta">
+                                       <span class="admin-type">
+                                            <i class="fa fa-user"></i>
+                                            Admin
+                                        </span>
+                                    </div>
+                                    <p>Dummy text is also used to demon strate the appea rance of different typefaces and layouts, and in general the content.</p>
+                                    电话:  <sapn class="blog-btn anti-bttn">+8613434343431</sapn>
+                                    <br/>
+                                    QQ:  <span class="blog-btn anti-bttn">+8613434343431</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End single blog -->
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="single-blog">
+                            <div class="blog-image">
+                                <a class="image-scale" href="blog-details.html">
+                                    <img src="images/product/blog/b3.jpg" alt="">
+                                    <div class="blog-item-date">
+                                        <span class="date-type">16</span>
+                                        <span class="years-type">Jul, 20</span>
+                                    </div>
+                                </a>
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <span class="admin-type">
+                                            <i class="fa fa-user"></i>
+                                            Admin
+                                        </span>
+                                    </div>
+                                    <p>Dummy text is also used to demon strate the appea rance of different typefaces and layouts, and in general the content.</p>
+                                    电话:  <sapn class="blog-btn anti-bttn">+8613434343431</sapn>
+                                    <br/>
+                                    QQ:  <span class="blog-btn anti-bttn">+8613434343431</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End single blog -->
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="single-blog">
+                            <div class="blog-image">
+                                <a class="image-scale" href="blog-details.html">
+                                    <img src="images/product/blog/b4.jpg" alt="">
+                                    <div class="blog-item-date">
+                                        <span class="date-type">24</span>
+                                        <span class="years-type">Aug, 20</span>
+                                    </div>
+                                </a>
+                                <div class="blog-content">
+                                   <div class="blog-meta">
+                                        <span class="admin-type">
+                                            <i class="fa fa-user"></i>
+                                            Admin
+                                        </span>
+                                    </div>
+                                    <p>Dummy text is also used to demon strate the appea rance of different typefaces and layouts, and in general the content.</p>
+                                    电话:  <sapn class="blog-btn anti-bttn">+8613434343431</sapn>
+                                    <br/>
+                                    QQ:  <span class="blog-btn anti-bttn">+8613434343431</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End single blog -->
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="single-blog home-last-blog">
+                            <div class="blog-image">
+                                <a class="image-scale" href="blog-details.html">
+                                    <img src="images/product/blog/b5.jpg" alt="">
+                                    <div class="blog-item-date">
+                                        <span class="date-type">16</span>
+                                        <span class="years-type">Jul, 20</span>
+                                    </div>
+                                </a>
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <span class="admin-type">
+                                            <i class="fa fa-user"></i>
+                                            Admin
+                                        </span>
+                                    </div>
+                                    <p>Dummy text is also used to demon strate the appea rance of different typefaces and layouts, and in general the content.</p>
+                                    电话:  <sapn class="blog-btn anti-bttn">+8613434343431</sapn>
+                                    <br/>
+                                    QQ:  <span class="blog-btn anti-bttn">+8613434343431</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End single blog -->
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="single-blog home-last-blog">
+                            <div class="blog-image">
+                                <a class="image-scale" href="blog-details.html">
+                                    <img src="images/product/blog/b6.jpg" alt="">
+                                    <div class="blog-item-date">
+                                        <span class="date-type">16</span>
+                                        <span class="years-type">Jul, 20</span>
+                                    </div>
+                                </a>
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <span class="admin-type">
+                                            <i class="fa fa-user"></i>
+                                            Admin
+                                        </span>
+                                    </div>
+                                    <p>Dummy text is also used to demon strate the appea rance of different typefaces and layouts, and in general the content.</p>
+                                    电话:  <sapn class="blog-btn anti-bttn">+8613434343431</sapn>
+                                    <br/>
+                                    QQ:  <span class="blog-btn anti-bttn">+8613434343431</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End single blog -->
+                    <div class="col-xl-12 col-lg-12 col-md-12 qiehuan">
+                        <div class="blog-pagination">
+                            <ul class="pagination">
+                               <li><a href="javascript:;" class="shang">Prev</a></li>
+                               <li class="active"><a href="javascript:;" class="var1">-1</a></li>
+                               <li><a href="javascript:;" class="var2">-2</a></li>
+                               <li><a href="javascript:;" class="var3">-3</a></li>
+                               <li><a href="javascript:;" class="xia">Next</a></li>
+                            </ul>
+                        </div>	
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Blog Area-->
+    </main>
+    <!-- Start Footer Area -->
+    <footer class="footer2">
+        <!-- Start Footer Bottom Area -->
+        <div class="footer-area-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="copyright">
+                            <p>
+                                Copyright © 2021
+                                By <a href="http://www.bootstrapmb.com/">tianyufighter</a> All rights reserved
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="contact.html">Terms & Condition</a></li>
+                                <li><a href="contact.html">Privacy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer Bottom Area -->
+    </footer>
+    <!-- End Footer Area -->
+
+    <!-- All JS here -->
+
+    <!-- modernizr JS -->
+    <script src="goodjs/vendor/modernizr-3.5.0.min.js"></script>
+    <!-- jquery latest version -->
+    <script src="goodjs/vendor/jquery-1.12.4.min.js"></script>
+    <!-- Poper js -->
+    <script src="goodjs/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="goodjs/bootstrap.min.js"></script>
+    <!-- owl.carousel js -->
+    <script src="goodjs/owl.carousel.min.js"></script>
+        <!-- Isotop js -->
+    <script src="goodjs/isotope.pkgd.min.js"></script>
+    <!-- meanmenu js -->
+    <script src="goodjs/jquery.meanmenu.js"></script>
+    <!-- Counter js -->
+    <script src="goodjs/jquery.counterup.min.js"></script>
+    <!-- waypoint js -->
+    <script src="goodjs/waypoints.js"></script>
+    <script src="goodjs/tilts.js"></script>
+    <!-- venobox js -->
+    <script src="goodjs/venobox.min.js"></script>
+    <!-- magnific js -->
+    <script src="goodjs/magnific.min.js"></script>
+    <!-- wow js -->
+    <script src="goodjs/wow.min.js"></script>
+    <!-- plugins js -->
+    <script src="goodjs/plugins.js"></script>
+    <!-- main js -->
+    <script src="goodjs/main.js"></script>
+</body>
+<script>
+    // 得到cookie值
+    function getCookie(c_name)
+    {
+        if (document.cookie.length>0)
+        {
+            c_start=document.cookie.indexOf(c_name + "=")
+            if (c_start!=-1)
+            {
+                c_start=c_start + c_name.length+1
+                c_end=document.cookie.indexOf(";",c_start)
+                if (c_end==-1) c_end=document.cookie.length
+                return unescape(document.cookie.substring(c_start,c_end))
+            }
+        }
+        return ""
+    }
+    // 记录当页是第几页
+    var pageNum = 1;
+    // 记录下一页是第几页
+    var nextPage = 2;
+    // 记录总的页数
+    var totalPage = 0;
+    // 记录前一页是第几页
+    var prePage = 0;
+    // 记录当前页的数量
+    var pageSize = 6;
+    $(window).load(function() {
+        var formData = new FormData();
+        formData.set("pageNum", pageNum);
+        formData.set("pageSize", pageSize);
+        $.ajax({
+            url: "http://39.108.117.49/queryProductByPage",
+            type: "POST",
+            dataType : "json",
+            processData: false,
+            contentType: false,
+            data:formData,
+            success: function(obj){
+                console.log(obj);
+                pageNum = obj.data.pageNum;
+                nextPage = obj.data.nextPage;
+                totalPage = obj.data.pages;
+                prePage = obj.data.prePage;
+                $(".var1").text(pageNum);
+                if(pageNum+1>totalPage) {
+                    $(".var2").hide();
+                } else {
+                    $(".var2").show();
+                    $(".var2").text(pageNum+1);
+                }
+                if(pageNum+2>totalPage) {
+                    $(".var3").hide();
+                } else {
+                    $(".var3").show();
+                    $(".var3").text(pageNum+2);
+                }
+                // $(".row")
+                $(".qiehuan").siblings().remove();
+                // 动态添加商品
+                for (var i = 0; i < obj.data.list.length; i++) {
+                    var div_str =  '<div class="col-xl-4 col-lg-4 col-md-6">';
+                    div_str +=  '<div class="single-blog">';
+                    div_str +=  '<div class="blog-image">';
+                    div_str +=  '<a class="image-scale" href="blog-details.html">';
+                    div_str +=  '<img src="'+obj.data.list[i].imagePath+'" alt="">';
+                    div_str +=  '<div class="blog-item-date">';
+                    div_str +=  '<span class="date-type">'+obj.data.list[i].releaseTime.substr(8, 2)+'</span>';
+                    div_str +=  '<span class="years-type">'+obj.data.list[i].releaseTime.substr(5, 2)+', '+obj.data.list[i].releaseTime.substr(0, 4)+'</span>';
+                    div_str +=  '</div>';
+                    div_str +=  '            </a>';
+                    div_str +=  '        <div class="blog-content">';
+                    div_str +=  '          <div class="blog-meta">';
+                    div_str +=  '             <span class="admin-type">';
+                    div_str +=  '                    <i class="fa fa-user"></i>';
+                    div_str +=  obj.data.list[i].username;
+                    div_str +=  '                 </span>';
+                    div_str +=  '            </div>';
+                    div_str +=  '         <p>';
+                    div_str +=  obj.data.list[i].productInfo;
+                    div_str +=  '</p>';
+                    div_str +=  '           电话: <sapn class="blog-btn anti-bttn">'+obj.data.list[i].telephone+'</sapn>';
+                    div_str +=  '           <br/>';
+                    div_str +=  '          QQ: <span class="blog-btn anti-bttn">'+obj.data.list[i].qq+'</span>';
+                    div_str +=  '       </div>';
+                    div_str +=  '        </div>';
+                    div_str +=  '   </div>';
+                    div_str +=  '</div>';
+                    $(".shangpin").prepend(div_str);
+                }
+            },
+            error: function() {
+                alert("发送出现异常了！！！");
+            }
+        });
+    })
+    $(".pagination>li").each(function() {
+        $(this).click(function() {
+            $(this).addClass("active");
+            $(this).siblings("li").removeClass("active");
+        })
+    })
+    $(".var2").click(function() {
+        var formData = new FormData();
+        var t = $(".var2").text();
+        console.log(t);
+        if(t > totalPage) {
+            $(this).removeClass("active");
+            alert("亲，已经到底了哟");
+        } else {
+
+            formData.set("pageNum", t);
+            formData.set("pageSize", pageSize);
+            $.ajax({
+                url: "http://39.108.117.49/queryProductByPage",
+                type: "POST",
+                dataType : "json",
+                processData: false,
+                contentType: false,
+                data:formData,
+                success: function(obj){
+                    console.log(obj);
+                    pageNum = obj.data.pageNum;
+                    nextPage = obj.data.nextPage;
+                    totalPage = obj.data.pages;
+                    prePage = obj.data.prePage;
+                    $(".var1").text(pageNum);
+                    if(pageNum+1>totalPage) {
+                        $(".var2").hide();
+                    } else {
+                        $(".var2").show();
+                        $(".var2").text(pageNum+1);
+                    }
+                    if(pageNum+2>totalPage) {
+                        $(".var3").hide();
+                    } else {
+                        $(".var3").show();
+                        $(".var3").text(pageNum+2);
+                    }
+                    // $(".row")
+                    $(".qiehuan").siblings().remove();
+                    $(".var1").parent().addClass("active");
+                    $(".var1").parent().siblings().removeClass("active");
+                    // 动态添加商品
+                    for (var i = 0; i < obj.data.list.length; i++) {
+                        var div_str =  '<div class="col-xl-4 col-lg-4 col-md-6">';
+                        div_str +=  '<div class="single-blog">';
+                        div_str +=  '<div class="blog-image">';
+                        div_str +=  '<a class="image-scale" href="blog-details.html">';
+                        div_str +=  '<img src="'+obj.data.list[i].imagePath+'" alt="">';
+                        div_str +=  '<div class="blog-item-date">';
+                        div_str +=  '<span class="date-type">'+obj.data.list[i].releaseTime.substr(8, 2)+'</span>';
+                        div_str +=  '<span class="years-type">'+obj.data.list[i].releaseTime.substr(5, 2)+', '+obj.data.list[i].releaseTime.substr(0, 4)+'</span>';
+                        div_str +=  '</div>';
+                        div_str +=  '            </a>';
+                        div_str +=  '        <div class="blog-content">';
+                        div_str +=  '          <div class="blog-meta">';
+                        div_str +=  '             <span class="admin-type">';
+                        div_str +=  '                    <i class="fa fa-user"></i>';
+                        div_str +=  obj.data.list[i].username;
+                        div_str +=  '                 </span>';
+                        div_str +=  '            </div>';
+                        div_str +=  '         <p>';
+                        div_str +=  obj.data.list[i].productInfo;
+                        div_str +=  '</p>';
+                        div_str +=  '           电话: <sapn class="blog-btn anti-bttn">'+obj.data.list[i].telephone+'</sapn>';
+                        div_str +=  '           <br/>';
+                        div_str +=  '          QQ: <span class="blog-btn anti-bttn">'+obj.data.list[i].qq+'</span>';
+                        div_str +=  '       </div>';
+                        div_str +=  '        </div>';
+                        div_str +=  '   </div>';
+                        div_str +=  '</div>';
+                        $(".shangpin").prepend(div_str);
+                    }
+                },
+                error: function() {
+                    alert("发送出现异常了！！！");
+                }
+            });
+        }
+    })
+    $(".var3").click(function() {
+        var formData = new FormData();
+        var t = $(".var3").text();
+        console.log(t);
+        if(t > totalPage) {
+            $(this).removeClass("active");
+            alert("亲，已经到底了哟");
+        } else {
+            formData.set("pageNum", t);
+            formData.set("pageSize", pageSize);
+            $.ajax({
+                url: "http://39.108.117.49/queryProductByPage",
+                type: "POST",
+                dataType : "json",
+                processData: false,
+                contentType: false,
+                data:formData,
+                success: function(obj){
+                    console.log(obj);
+                    pageNum = obj.data.pageNum;
+                    nextPage = obj.data.nextPage;
+                    totalPage = obj.data.pages;
+                    prePage = obj.data.prePage;
+                    $(".var1").text(pageNum);
+                    if(pageNum+1>totalPage) {
+                        $(".var2").hide();
+                    } else {
+                        $(".var2").show();
+                        $(".var2").text(pageNum+1);
+                    }
+                    if(pageNum+2>totalPage) {
+                        $(".var3").hide();
+                    } else {
+                        $(".var3").show();
+                        $(".var3").text(pageNum+2);
+                    }
+
+                    // $(".row")
+                    // 移除之前的商品信息
+                    $(".qiehuan").siblings().remove();
+                    $(".var1").parent().addClass("active");
+                    $(".var1").parent().siblings().removeClass("active");
+                    // 动态添加商品
+                    for (var i = 0; i < obj.data.list.length; i++) {
+                        var div_str =  '<div class="col-xl-4 col-lg-4 col-md-6">';
+                        div_str +=  '<div class="single-blog">';
+                        div_str +=  '<div class="blog-image">';
+                        div_str +=  '<a class="image-scale" href="blog-details.html">';
+                        div_str +=  '<img src="'+obj.data.list[i].imagePath+'" alt="">';
+                        div_str +=  '<div class="blog-item-date">';
+                        div_str +=  '<span class="date-type">'+obj.data.list[i].releaseTime.substr(8, 2)+'</span>';
+                        div_str +=  '<span class="years-type">'+obj.data.list[i].releaseTime.substr(5, 2)+', '+obj.data.list[i].releaseTime.substr(0, 4)+'</span>';
+                        div_str +=  '</div>';
+                        div_str +=  '            </a>';
+                        div_str +=  '        <div class="blog-content">';
+                        div_str +=  '          <div class="blog-meta">';
+                        div_str +=  '             <span class="admin-type">';
+                        div_str +=  '                    <i class="fa fa-user"></i>';
+                        div_str +=  obj.data.list[i].username;
+                        div_str +=  '                 </span>';
+                        div_str +=  '            </div>';
+                        div_str +=  '         <p>';
+                        div_str +=  obj.data.list[i].productInfo;
+                        div_str +=  '</p>';
+                        div_str +=  '           电话: <sapn class="blog-btn anti-bttn">'+obj.data.list[i].telephone+'</sapn>';
+                        div_str +=  '           <br/>';
+                        div_str +=  '          QQ: <span class="blog-btn anti-bttn">'+obj.data.list[i].qq+'</span>';
+                        div_str +=  '       </div>';
+                        div_str +=  '        </div>';
+                        div_str +=  '   </div>';
+                        div_str +=  '</div>';
+                        $(".shangpin").prepend(div_str);
+                    }
+                },
+                error: function() {
+                    alert("发送出现异常了！！！");
+                }
+            });
+        }
+    })
+    $(".shang").click(function() {
+        var formData = new FormData();
+        var t = pageNum-1;
+        console.log(t);
+        if(t > totalPage || t <= 0) {
+            $(this).removeClass("active");
+            alert("亲，已经到底了哟");
+        } else {
+            formData.set("pageNum", t);
+            formData.set("pageSize", pageSize);
+            $.ajax({
+                url: "http://39.108.117.49/queryProductByPage",
+                type: "POST",
+                dataType : "json",
+                processData: false,
+                contentType: false,
+                data:formData,
+                success: function(obj){
+                    console.log(obj);
+                    pageNum = obj.data.pageNum;
+                    nextPage = obj.data.nextPage;
+                    totalPage = obj.data.pages;
+                    prePage = obj.data.prePage;
+                    $(".var1").text(pageNum);
+                    if(pageNum+1>totalPage) {
+                        $(".var2").hide();
+                    } else {
+                        $(".var2").show();
+                        $(".var2").text(pageNum+1);
+                    }
+                    if(pageNum+2>totalPage) {
+                        $(".var3").hide();
+                    } else {
+                        $(".var3").show();
+                        $(".var3").text(pageNum+2);
+                    }
+
+                    // $(".row")
+                    // 移除之前的商品信息
+                    $(".qiehuan").siblings().remove();
+                    $(".var1").parent().addClass("active");
+                    $(".var1").parent().siblings().removeClass("active");
+                    // 动态添加商品
+                    for (var i = 0; i < obj.data.list.length; i++) {
+                        var div_str =  '<div class="col-xl-4 col-lg-4 col-md-6">';
+                        div_str +=  '<div class="single-blog">';
+                        div_str +=  '<div class="blog-image">';
+                        div_str +=  '<a class="image-scale" href="blog-details.html">';
+                        div_str +=  '<img src="'+obj.data.list[i].imagePath+'" alt="">';
+                        div_str +=  '<div class="blog-item-date">';
+                        div_str +=  '<span class="date-type">'+obj.data.list[i].releaseTime.substr(8, 2)+'</span>';
+                        div_str +=  '<span class="years-type">'+obj.data.list[i].releaseTime.substr(5, 2)+', '+obj.data.list[i].releaseTime.substr(0, 4)+'</span>';
+                        div_str +=  '</div>';
+                        div_str +=  '            </a>';
+                        div_str +=  '        <div class="blog-content">';
+                        div_str +=  '          <div class="blog-meta">';
+                        div_str +=  '             <span class="admin-type">';
+                        div_str +=  '                    <i class="fa fa-user"></i>';
+                        div_str +=  obj.data.list[i].username;
+                        div_str +=  '                 </span>';
+                        div_str +=  '            </div>';
+                        div_str +=  '         <p>';
+                        div_str +=  obj.data.list[i].productInfo;
+                        div_str +=  '</p>';
+                        div_str +=  '           电话: <sapn class="blog-btn anti-bttn">'+obj.data.list[i].telephone+'</sapn>';
+                        div_str +=  '           <br/>';
+                        div_str +=  '          QQ: <span class="blog-btn anti-bttn">'+obj.data.list[i].qq+'</span>';
+                        div_str +=  '       </div>';
+                        div_str +=  '        </div>';
+                        div_str +=  '   </div>';
+                        div_str +=  '</div>';
+                        $(".shangpin").prepend(div_str);
+                    }
+                },
+                error: function() {
+                    alert("发送出现异常了！！！");
+                }
+            });
+        }
+    })
+    $(".xia").click(function() {
+        var formData = new FormData();
+        var t = pageNum+1;
+        console.log(t);
+        if(t > totalPage || t <= 0) {
+            $(this).removeClass("active");
+            alert("亲，已经到底了哟");
+        } else {
+            formData.set("pageNum", t);
+            formData.set("pageSize", pageSize);
+            $.ajax({
+                url: "http://39.108.117.49/queryProductByPage",
+                type: "POST",
+                dataType : "json",
+                processData: false,
+                contentType: false,
+                data:formData,
+                success: function(obj){
+                    console.log(obj);
+                    pageNum = obj.data.pageNum;
+                    nextPage = obj.data.nextPage;
+                    totalPage = obj.data.pages;
+                    prePage = obj.data.prePage;
+                    $(".var1").text(pageNum);
+                    if(pageNum+1>totalPage) {
+                        $(".var2").hide();
+                    } else {
+                        $(".var2").show();
+                        $(".var2").text(pageNum+1);
+                    }
+                    if(pageNum+2>totalPage) {
+                        $(".var3").hide();
+                    } else {
+                        $(".var3").show();
+                        $(".var3").text(pageNum+2);
+                    }
+
+                    // $(".row")
+                    // 移除之前的商品信息
+                    $(".qiehuan").siblings().remove();
+                    $(".var1").parent().addClass("active");
+                    $(".var1").parent().siblings().removeClass("active");
+                    // 动态添加商品
+                    for (var i = 0; i < obj.data.list.length; i++) {
+                        var div_str =  '<div class="col-xl-4 col-lg-4 col-md-6">';
+                        div_str +=  '<div class="single-blog">';
+                        div_str +=  '<div class="blog-image">';
+                        div_str +=  '<a class="image-scale" href="blog-details.html">';
+                        div_str +=  '<img src="'+obj.data.list[i].imagePath+'" alt="">';
+                        div_str +=  '<div class="blog-item-date">';
+                        div_str +=  '<span class="date-type">'+obj.data.list[i].releaseTime.substr(8, 2)+'</span>';
+                        div_str +=  '<span class="years-type">'+obj.data.list[i].releaseTime.substr(5, 2)+', '+obj.data.list[i].releaseTime.substr(0, 4)+'</span>';
+                        div_str +=  '</div>';
+                        div_str +=  '            </a>';
+                        div_str +=  '        <div class="blog-content">';
+                        div_str +=  '          <div class="blog-meta">';
+                        div_str +=  '             <span class="admin-type">';
+                        div_str +=  '                    <i class="fa fa-user"></i>';
+                        div_str +=  obj.data.list[i].username;
+                        div_str +=  '                 </span>';
+                        div_str +=  '            </div>';
+                        div_str +=  '         <p>';
+                        div_str +=  obj.data.list[i].productInfo;
+                        div_str +=  '</p>';
+                        div_str +=  '           电话: <sapn class="blog-btn anti-bttn">'+obj.data.list[i].telephone+'</sapn>';
+                        div_str +=  '           <br/>';
+                        div_str +=  '          QQ: <span class="blog-btn anti-bttn">'+obj.data.list[i].qq+'</span>';
+                        div_str +=  '       </div>';
+                        div_str +=  '        </div>';
+                        div_str +=  '   </div>';
+                        div_str +=  '</div>';
+                        $(".shangpin").prepend(div_str);
+                    }
+                },
+                error: function() {
+                    alert("发送出现异常了！！！");
+                }
+            });
+        }
+    })
+    function judgeLog() {
+        var name = getCookie("username");
+        if(name === "" || name === null) {
+            alert("您还未登录，请先登录后使用");
+            console.log(1);
+            return false;
+        } else {
+            console.log(2);
+            return true;
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,1288 @@
+
+
+/* -------------------------------------------------
+  Large Screen. 
+---------------------------------------------------*/
+
+@media (min-width: 1024px) and (max-width: 1600px) {
+	.em-nivo-slider-wrapper:hover .nivo-directionNav a {
+		left: 5px;
+	}
+	.em-nivo-slider-wrapper:hover .nivo-directionNav .nivo-nextNav {
+		right: 5px;
+	}
+	.banner-content p {
+		width: 64%;
+	}
+	.top-right-menu ul.social-icons li {
+		margin-left: 6px;
+	}
+	.top-address p a,
+	.top-right-menu ul.social-icons li a,
+	.top-address p span {
+		font-size: 12px;
+	}
+}
+
+
+/* -------------------------------------------------
+  Laptop Screen 
+---------------------------------------------------*/
+
+@media (min-width: 1170px) and (max-width: 1366px) {
+	.banner-content p {
+		width: 70%;
+	}
+	.Khatiyar_menu > ul > li > a {
+		margin: 38px 8px 38px;
+		font-size: 12px;
+	}
+	.em-slider-sub-title {
+		font-size: 50px;
+	}
+	.about_text p {
+		margin-bottom: 0;
+	}
+	.em-slider-sub-em-title {
+		margin-bottom: 90px;
+	}
+	.single_contact_title h1 {
+		font-size: 27px;
+	}
+	.single_contact_title h2 {
+		font-size: 17px;
+	}
+	.count_down_title h1 {
+		font-size: 54px;
+	}
+	.destination_content h1 {
+		font-size: 32px;
+	}
+	.destination_content {
+		padding: 22px 25px 0 25px;
+	}
+	.single_hotel_content {
+		top: 66%;
+		left: 25px;
+	}
+	.home-2 .about_content {
+		padding-right: 0;
+		padding-left: 0;
+		padding-top: 0;
+	}
+	.about-button {
+		padding-bottom: 50px;
+	}
+	.row.about-content-inner {
+		padding-left: 0 !important;
+		padding-top: 8px;
+	}
+	.about-telephone h4 {
+		font-size: 16px;
+	}
+	.about-telephone h4 span {
+		font-size: 15px;
+	}
+	.countr_text h4 {
+		font-size: 19px;
+	}
+	.properties_em_text {
+		padding-right: 6.5px;
+		padding-left: 6.5px;
+	}
+	.event_content_area {
+		padding: 4px 15px 10px;
+	}
+	.event-right .event_date_list {
+		margin-top: 23px;
+	}
+	.properties_title a {
+		font-size: 20px;
+	}
+	.em_testi_text p {
+		font-size: 17px;
+	}
+	.destination_button {
+		padding-top: 6px;
+	}
+	.Khatiyar-blog-meta-left a, .Khatiyar-blog-meta-right a, .Khatiyar-blog-meta-left span, .Khatiyar-blog-meta-right span {
+		margin-right: 14px;
+	}
+	.blog-page-title h2 {
+		font-size: 17px;
+	}
+	.input_form_field_inner span {
+		font-size: 12px;
+	}
+	.single_profile_follow_icon {
+		margin-bottom: 24px;
+	}
+	.single_author_title span {
+		margin-right: 0px;
+	}
+	.single_author_title a {
+		margin-left: 56px;
+	}
+	.single_author_content_thumb img {
+		top: 30%;
+	}
+	.pack_thumb.vertical-thumb {
+		width: 46%;
+		margin-right: 24px;
+	}
+	.popular_package_area.style2 .package_btn a {
+		padding: 5px 15px;
+		letter-spacing: 0;
+	}
+	.single_package.single-vertical.style2  {
+		padding: 19px 13px 19px;
+	}
+	.package_content.vertical-content.style2 {
+		padding: 0;
+	}
+	.row.vertical-style3 .package_btn a {
+		padding: 6px 17px;
+		font-size: 14px;
+		letter-spacing: 0;
+	}
+	.search_listing_area .package_btn a {
+		padding: 5px 8px;
+		font-size: 14px;
+		letter-spacing: 0;
+	}
+	.search_listing_area .package_meta i {
+		height: 35px;
+		width: 35px;
+		line-height: 34px;
+		font-size: 20px;
+	}
+	.search_listing_area .package_meta {
+		float: right;
+		margin-top: -35.5px;
+	}
+	.search_listing_area .package_title h2 {
+		font-size: 19px;
+	}
+	.package_btn a {
+		padding: 5px 13px;
+		letter-spacing: 0;
+	}
+	.package_content.vertical-content {
+		padding: 69px 20px 100px;
+	}
+	.about_content h1 {
+		font-size: 33px;
+	}
+	.about_content {
+		padding: 19px 16px 0 21px;
+	}
+	.Khatiyar-blog-meta-left a, .Khatiyar-blog-meta-right a, .Khatiyar-blog-meta-left span, .Khatiyar-blog-meta-right span {
+		margin-right: 14px;
+	}
+}
+
+ 
+/* -------------------------------------------------
+  Old Desktop :992
+---------------------------------------------------*/
+
+@media (min-width: 992px) and (max-width: 1169px) {
+	.top-right-menu ul.social-icons li {
+		margin-left: 9px;
+	}
+	.em-slider-sub-title {
+		font-size: 50px;
+	}
+	.em-slider-descript {
+		width: 66%;
+		margin-top: 11px;
+		margin-bottom: 26px;
+	}
+	.menu-height-space {
+		height: 0;
+	}
+	.Khatiyar_menu > ul > li > a {
+		margin: 38px 8px 38px;
+		font-size: 12px;
+	}
+	a.dtbtn {
+		font-size: 14px;
+		margin-left: 0;
+		padding: 10px 20px;
+	}
+	.curosel-style .owl-nav div {
+		left: 15px;
+	}
+	.curosel-style .owl-nav .owl-next {
+		left: auto;
+		right: 15px;
+	}
+	.section-title.t_center.port p {
+		width: 100%;
+	}
+	.title_ptx p {
+		padding-top: 10px;
+	}
+	.title_in_area {
+		width: 100%;
+	}
+	.title_tx h2 {
+		font-size: 33px;
+	}
+	.title_in_area1 p {
+		width: 58%;
+	}
+	.recent-post-text h4 a {
+		font-size: 13px;
+	}
+	.Khatiyar_menu ul {
+		margin-right: 21px;
+	}
+	.em-nivo-slider-wrapper .nivo-directionNav {
+		display: none;
+	}
+	.Khatiyar-tab li {
+		margin: 10px 12px 10px 0;
+	}
+	.Khatiyar-tab li a {
+		padding: 7px 15.9px 0;
+	}
+	.blog-page-title h2 {
+		font-size: 17px;
+	}
+	a.dtbtn {
+		margin-top: 27px;
+	}
+	.header_style_two .Khatiyar_menu>ul>li>a {
+		margin-left: 20px;
+	}
+	.em_slider_inner {
+		top: 58%;
+	}
+	.subscribe_form {
+		margin-top: 0;
+	}
+	.em-service-title h2 {
+		font-size: 18px;
+	}
+	.top-address p a,
+	.top-right-menu ul.social-icons li a,
+	.top-address p span {
+		font-size: 13px;
+	}
+	.Khatiyar-tab li a {
+		padding: 0 0px 0;
+	}
+	.Khatiyar-tab li i {
+		font-size: 27px;
+		margin-right: 5px;
+	}
+	.Khatiyar-tab li {
+		padding: 14px 0px 14px 10px;
+		margin: 5px 5px 37px 5px;
+	}
+	.em-slider-sub-em-title {
+		padding-bottom: 225px;
+	}
+	.count_down_title h1 {
+		font-size: 54px;
+	}
+	.destination_button {
+		padding-top: 6px;
+	}
+	.destination_content h1 {
+		font-size: 32px;
+	}
+	.destination_content {
+		padding: 22px 25px 0 25px;
+	}
+	.single_hotel_content {
+		top: 66%;
+		left: 25px;
+	}
+	.home-2 .about_content {
+		padding-right: 0;
+		padding-left: 0;
+		padding-top: 0;
+	}
+	.about-button {
+		padding-bottom: 50px;
+	}
+	.row.about-content-inner {
+		padding-left: 0 !important;
+		padding-top: 8px;
+	}
+	.about-telephone h4 {
+
+		font-size: 16px;
+	}
+	.about-telephone h4 span {
+		font-size: 15px;
+	}
+	.countr_text h4 {
+		font-size: 19px;
+	}
+	.properties_em_text {
+		padding-right: 6.5px;
+		padding-left: 6.5px;
+	}
+	.event_content_area {
+		padding: 4px 15px 10px;
+	}
+	.event-right .event_date_list {
+		margin-top: 23px;
+	}
+	.properties_title a {
+		font-size: 20px;
+	}
+	.em_testi_text p {
+		font-size: 17px;
+	}
+	.input_form_field_inner span {
+		font-size: 12px;
+	}
+	.single_profile_follow_icon {
+		margin-bottom: 24px;
+	}
+	.single_author_title span {
+		margin-right: 0px;
+	}
+	.single_author_text {
+		margin-left: 100px;
+	}
+	.single_author_content_thumb img {
+		top: 30%;
+	}
+	.pack_thumb.vertical-thumb {
+		width: 46%;
+		margin-right: 24px;
+	}
+	.popular_package_area.style2 .package_btn a {
+		padding: 5px 15px;
+		letter-spacing: 0;
+	}
+	.single_package.single-vertical.style2  {
+		padding: 19px 13px 19px;
+	}
+	.package_content.vertical-content.style2 {
+		padding: 0;
+	}
+	.row.vertical-style3 .package_btn a {
+		padding: 6px 17px;
+		font-size: 14px;
+		letter-spacing: 0;
+	}
+	.search_listing_area .package_btn a {
+		padding: 4px 4px;
+		font-size: 13px;
+		letter-spacing: 0;
+	}
+	.search_listing_area .package_meta i {
+		height: 30px;
+		width: 28px;
+		line-height: 27px;
+		font-size: 18px;
+		margin-left: 0;
+	}
+	.search_listing_area .package_meta {
+		margin-top: -31.5px;
+	}
+	.search_listing_area .package_title h2 {
+		font-size: 15px;
+	}
+	.package_btn a {
+		padding: 5px 13px;
+		letter-spacing: 0;
+	}
+	.single_top_list_content h2 {
+		font-size: 21px;
+	}
+	.package_content.vertical-content {
+		padding: 69px 20px 100px;
+	}
+	.about_content h1 {
+		font-size: 33px;
+	}
+	.about_content {
+		padding: 19px 16px 0 21px;
+	}
+}
+
+
+/* -------------------------------------------------
+  Tablet Screen : 768
+---------------------------------------------------*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.em-slider-sub-title {
+		font-size: 35px;
+		margin-bottom: 0;
+	}
+	.em-slider-descript {
+		width: 60%;
+		font-size: 20px;
+		margin-bottom: 0;
+	}
+	.em-button-button-area a {
+		margin-top: 30px;
+	}
+	.footer-top-inner p {
+		width: 78%;
+	}
+	.banner-content p {
+		width: 74%;
+	}
+	.banner-content h1 {
+		font-size: 50px;
+	}
+	.banner-content h2 {
+		color: #fff;
+		font-size: 43px;
+	}
+	.mean-container .mean-bar::before {
+		top: 15px;
+	}
+	.em-nivo-slider-wrapper .nivo-directionNav {
+		display: none;
+	}
+	.sbi_photo_wrap {
+		margin-bottom: 10px;
+		margin-right: 10px;
+	}
+	.title_in_area {
+		width: 100%;
+	}
+
+	.title_ptx p {
+		padding-top: 2px;
+	}
+	.curosel-style .owl-nav div {
+		left: 15px;
+	}
+	.curosel-style .owl-nav .owl-next {
+		left: auto;
+		right: 15px;
+	}
+	.title_tx h2 {
+		font-size: 30px;
+	}
+	.recent-post-text {
+		padding-top: 12px;
+	}
+	.footer-middle {
+		padding: 66px 0 87px;
+	}
+	.panel-group {
+		margin-top: 30px;
+	}
+	.comment_field .input-field {
+		width: 100%;
+		float: none;
+	}
+	.logo {
+		text-align: center;
+		margin-bottom: 33px;
+	}
+	.em-nivo-slider-wrapper .nivo-controlNav {
+		bottom: 15px;
+	}
+	.Khatiyar-tab li {
+		display: inline-block;
+		padding: 12px 26px;
+		border-radius: 5px;
+		margin: 5px 5px 28px 5px;
+		text-align: center;
+	}
+	.Khatiyar-tab li i {
+		font-size: 27px;
+		float: none;
+		margin-right: 0;
+	}
+	.Khatiyar-tab li a {
+		padding: 2px 10px 0;
+	}
+	.em_contact_form {
+		margin-bottom: 0;
+	}
+	.contact_bnt {
+		margin-bottom: 50px;
+	}
+	.contact_info {
+		margin-bottom: 50px;
+	}
+	.company_info {
+		padding-top: 50px;
+	}
+	.slider_text>h1,
+	.slider_text>h2 {
+		font-size: 40px;
+	}
+	.slider_text>p {
+		width: 96%;
+		font-size: 14px;
+	}
+	.top-right-menu ul.social-icons li {
+		margin-left: 8px;
+	}
+	.em_slider_inner {
+		top: 50%;
+	}
+	.subscribe_form {
+		margin-top: 0;
+	}
+	.em-slider-title {
+		display: none;
+	}
+	.section-title h2 {
+		font-size: 32px;
+	}
+	.testimonial_area {
+		padding-bottom: 70px;
+		;
+	}
+	.Khatiyar-blog-meta-left a,
+	.Khatiyar-blog-meta-right a,
+	.Khatiyar-blog-meta-left span,
+	.Khatiyar-blog-meta-right span {
+		margin-right: 5px;
+		font-size: 14px;
+	}
+	.blog-page-title h2 a {
+		font-size: 19px;
+	}
+	.top-address p a,
+	.top-right-menu ul.social-icons li a,
+	.top-address p span {
+		font-size: 14px;
+		margin-right: 3px;
+	}
+	.Khatiyar-header-top {
+		display: none;
+	}
+	span.cdowns::before {
+		display: none;
+	}
+	span.cdowns::after {
+		display: none;
+	}
+	.count_down_btn {
+		text-align: left;
+	}
+	.em-slider-sub-em-title {
+		padding-bottom: 225px;
+		font-size: 20px;
+	}
+	.em-slider-up-title {
+		font-size: 20px;
+	}
+	.single_counter::before {
+		display: none;
+	}
+	.call-do-action-left h2 {
+		font-size: 19px;
+	}
+	.destination_content h1 {
+		font-size: 36px;
+	}
+	.destination_content h2 {
+		font-size: 25px;
+	}
+	.destination_thumb {
+		width: 100%;
+		float: none;
+	}
+	.destination_content {
+		overflow: hidden;
+		width: 100%;
+		float: none;
+		padding: 53px 40px 72px 61px;
+	}
+	.section-title h2::before {
+		left: 31%;
+	}	
+	.section-title h2::after {
+		right: 31%;
+	}
+	.instructor_title {
+		width: 25%;
+	}
+	.home-2 .about_content {
+		padding-right: 0;
+		padding-left: 0;
+		padding-top: 44px;
+	}
+	.about-button {
+		padding-bottom: 50px;
+	}
+	.row.about-content-inner {
+		padding-left: 0 !important;
+		padding-top: 8px;
+	}
+	.slick-single-slider .slider-content {
+		left: 2.5%;
+	}
+	.single_counter {
+		margin-bottom: 30px;
+	}
+	.properties_em_text {
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+	.event-right {
+		margin-top: 25px;
+	}
+	.em_testi_text p {
+		font-size: 17px;
+	}
+	.input_form_field_inner span {
+		font-size: 12px;
+	}
+	.single_profile_content_text_info span {
+		font-size: 12px;
+	}
+	.single_profile_info {
+		padding: 3px 13px 20px;
+	}
+	.single_profile_follow_icon {
+		margin-bottom: 47px;
+	}
+	.single_package.single-vertical {
+		padding: 26px 20px 46px;
+		overflow: hidden;
+	}
+	.single_package.single-vertical .package_content {
+		padding: 0;
+	}
+	.pack_thumb.vertical-thumb.style2 {
+		width: 100%;
+	}
+	.package_content.vertical-content.style2 {
+		float: left;
+		padding: 13px 0 40px;
+	}
+	.google_map_area {
+		display: none;
+	}
+	.submit_button {
+		width: 100%;
+	}
+	.pack_thumb.vertical-thumb.style2 {
+		margin-bottom: 20px;
+	}
+	.about_thumb {
+		width: 100%;
+	}
+	.about_content {
+		width: 100%;
+		padding: 40px 36px 45px 28px;
+	}
+	
+}
+
+
+/* -------------------------------------------------
+  Small Mobile : 320
+---------------------------------------------------*/
+
+@media (max-width: 767px) {
+	.slider_text .slider_text_inner>h1{
+		font-size:36px;
+	}
+	.slider_text_inner p{
+		font-size:20px;
+	}
+	.Khatiyar-serach-form{
+		    padding: 13px 16px;
+	}
+	.scroll-next{
+		display:none;
+	}
+	.Khatiyar-tab li a {
+		padding: 11px 28px;
+	}
+	.contact_bnt {
+		margin-bottom: 50px;
+	}
+	.counter_bnt a {
+		padding: 8px 30px;
+	}
+	.contact_info {
+		margin-bottom: 50px;
+	}
+	.em-slider-title {
+		font-size: 13px;
+		margin-bottom: 16px;
+	}
+	.em-slider-sub-title {
+		font-size: 26px;
+	}
+	.em-button-button-area a {
+		margin-top: 37px;
+		padding: 7px 24px;
+	}
+	.text-left .em-slider-descript {
+		margin: auto;
+		width: 94%;
+		font-size: 14px;
+		margin-top: 0;
+	}
+	.em-slider-button {
+		display: none;
+	}
+	.em-nivo-slider-wrapper .nivo-controlNav {
+		display: none;
+	}
+	/* top bar */
+	.top-address {
+		text-align: center;
+	}
+	.social-icons.text-right {
+		text-align: center;
+	}
+	/* footer bar */
+	.footer-top-inner p {
+		width: 100%;
+	}
+	.footer-menu ul {
+		margin: 10px 0 0;
+		text-align: center;
+	}
+	.footer-menu ul li a {
+		font-size: 14px;
+	}
+	.copy-right-text p {
+		text-align: center;
+	}
+	.banner-content h1 {
+		font-size: 45px;
+	}
+	.banner-content h2 {
+		font-size: 23px;
+	}
+	.banner-content p {
+		width: 72%;
+	}
+	.footer-social-icon a i {
+		font-size: 16px;
+		height: 35px;
+		line-height: 35px;
+		width: 35px;
+	}
+	.banner-content h1 {
+		font-size: 28px;
+	}
+	.banner-content h2 {
+		font-size: 16px;
+	}
+	.banner-content p {
+		width: 98%;
+	}
+	.mean-container .mean-bar::before {
+		text-transform: uppercase;
+		top: 15px;
+	}
+	.footer-middle {
+		padding: 63px 0 76px;
+	}
+	.em_slider_inner.text-left,
+	.em_slider_inner.text-right {
+		text-align: center !important;
+	}
+	ul.page-numbers {
+		margin-bottom: 15px;
+	}
+	.section-title h2 {
+		font-size: 27px;
+	}
+	.section-title.t_center {
+		width: 100%;
+	}
+	.portfolio_content_inner h3 {
+		font-size: 17px;
+	}
+	.single_counter {
+		margin-bottom: 70px;
+	}
+	.counter_area {
+		padding-bottom: 0;
+	}
+	.title_in::before {
+		background: none;
+	}
+	.title_in::after {
+		background: none;
+	}
+	.title_tx h2 {
+		font-size: 20px;
+	}
+	.section-title.t_center.port p {
+		width: 100%;
+	}
+	.title_in_area1 p {
+		width: 100%;
+	}
+	.title_tx h5 {
+		font-size: 16px;
+	}
+	.title_in_area {
+		width: 100%;
+	}
+	.call-to-action_area {
+		padding-bottom: 120px;
+	}
+	.single-video h3 {
+		font-size: 17px;
+	}
+	.title_ptx p {
+		width: 100%;
+	}
+	.section-title1 h2 {
+		font-size: 20px;
+	}
+	.feature_inner_box {
+		margin-bottom: 30px;
+	}
+	.form_field_inner {
+		width: 100%;
+	}
+	.curosel-style .owl-nav div {
+		left: 15px;
+	}
+	.curosel-style .owl-nav .owl-next {
+		left: auto;
+		right: 15px;
+	}
+	.comment_field .input-field label,
+	.comment_field .textarea-field label {
+		font-size: 13px;
+	}
+	.footer-middle {
+		padding: 65px 0 100px;
+	}
+	.recent-post-text h4 a {
+		font-size: 15px;
+	}
+	.em-nivo-slider-wrapper .nivo-directionNav .nivo-prevNav,
+	.em-nivo-slider-wrapper .nivo-directionNav .nivo-nextNav {
+		display: none;
+	}
+	.owl-carousel .owl-dot,
+	.owl-carousel .owl-nav .owl-next,
+	.owl-carousel .owl-nav .owl-prev {
+		display: none;
+	}
+	.recent-post-text {
+		margin-top: 11px;
+		overflow: hidden;
+	}
+	.single_image {
+		text-align: center;
+	}
+	.Khatiyar-single-blog-title h2 {
+		font-size: 20px;
+	}
+	.Khatiyar-blog-meta-left a,
+	.Khatiyar-blog-meta-left span {
+		font-size: 12px;
+	}
+	.single-blog-content h1 {
+		font-size: 25px;
+	}
+	.single-blog-content h2 {
+		font-size: 24px;
+	}
+	.comment_field .input-field {
+		width: 100%;
+		float: none;
+	}
+	.sidebar-right.content-widget.pdsr {
+		padding-top: 60px;
+	}
+	.Khatiyar-tab li {
+		display: block !important;
+		float: none;
+	}
+	.comments_thumb {
+		float: none;
+		margin-bottom: 20px;
+	}
+	.blog_comments_section .post_meta span {
+		padding-right: 12px;
+	}
+	.commentst_meta_reply i {
+		display: none;
+	}
+	.single_commentst_inner {
+		padding-left: 0;
+	}
+	.recent-post-text {
+		margin-top: 4px;
+		overflow: hidden;
+	}
+	.blog-grid .recent-post-text>h4 {
+		margin-top: 0;
+	}
+	.blog_area.blog-grid {
+		padding: 40px 0 72px;
+	}
+	.slider_text>h1 {
+		font-size: 23px;
+		margin-bottom: 15px;
+	}
+	.slider_text>h2 {
+		font-size: 23px;
+	}
+	.slider_text>p {
+		width: 96%;
+		font-size: 14px;
+	}
+	.sreadmore {
+		font-size: 12px;
+		padding: 6px 22px;
+		margin: 0 2px 0;
+	}
+	.em_slider_inner {
+		top: 50%;
+	}
+	.subscribe_form {
+		margin-top: 0;
+	}
+	.container {
+		width: 325px;
+	}
+	.subscribe_form_field {
+		width: 100%;
+	}
+	.subscribe_form_field button {
+		right: 0%;
+		width: 31%;
+	}
+	.subscribe_title h2 {
+		font-size: 21px;
+	}
+	.slider_content {
+		height: 770px;
+		padding-top: 46%;
+	}
+	span.cdowns {
+		margin: 20px 32px;
+	}
+	span.cdowns::before {
+		display: none;
+	}
+	span.cdowns::after {
+		display: none;
+	}
+	.Khatiyar-tab li i {
+		padding-top: 10px;
+	}
+	.em-slider-sub-em-title {
+		display: none;
+	}
+	.em-slider-up-title {
+		font-size: 16px;
+		padding-bottom: 15px;
+	}
+	.em-slider-up-title::before {
+		left: -60px;
+		top: 11px;
+		width: 52px;
+	}	
+	.em-slider-up-title::after {
+		right: -60px;
+		top: 11px;
+		width: 52px;
+	}
+	.single_counter::before {
+		display: none;
+	}
+	.single_brand {
+		text-align: center;
+	}
+	.portfolio_nav ul li {
+		font-size: 13px;
+		letter-spacing: 1px;
+		padding: 3px 9px;
+		margin: 0px 2px 12px;
+	}
+	.em-slider-descript {
+		display: none;
+	}
+	.section-title h2::after {
+		right: 60%;
+	}
+	.section-title h2::before {
+		left: 60%;
+	}
+	.main-search-form {
+		padding: 43px 26px 17px;
+		margin: 0 auto;
+	}
+	.count_down_btn {
+		text-align: center;
+		padding-top: 30px;
+	}
+	.count_down_title h1 {
+		font-size: 27px;
+	}
+	.count_down_title h2 {
+		font-size: 15px;
+	}
+	.destination_content h1 {
+		font-size: 21px;
+	}
+	.destination_thumb {
+		width: 100%;
+		float: none;
+	}
+	.destination_content {
+		overflow: hidden;
+		width: 100%;
+		float: none;
+		padding: 53px 40px 72px 61px;
+	}
+	.destination_button a {
+		margin-right: 0;
+		transition: .3s;
+		overflow: hidden;
+	}
+	.destination_button a.active {
+		margin-top: 25px;
+	}
+	.quote_button {
+		width: 44%;
+		right: 3%;
+	}
+	.quote_form_field input {
+		width: 100%;
+	}
+	.destination_thumb_two img {
+		width: 100%;
+	}
+	.single_hotel_thumb img {
+		width: 100%;
+	}
+	.single_hotel_content {
+		top: 66%;
+		left: 25px;
+	}
+	.instructor_title {
+		width: 25%;
+	}
+	.breatcome_title_inner {
+		margin-left: 38px;
+	}
+	.home-2 .about_content {
+		padding-right: 0;
+		padding-left: 0;
+		padding-top: 44px;
+	}
+	.about-button {
+		padding-bottom: 50px;
+	}
+	.counterdowns {
+		text-align: center;
+	}
+	.row.search-form-home-2 {
+		padding: 49px 0px 44px;
+	}
+	.search-form-home-2 .main-search-form {
+		padding: 43px 0px 17px;
+		margin: 0 auto;
+	}
+	.slick-single-slider .slider-content {
+		left: 13px;
+	}
+	.slick-prev, .slick-next {
+		display: none !important;
+	}
+	.slick-single-slider .slider-content h1 {
+		font-size: 42px;
+
+	}
+	.event_page_title h2 {
+		font-size: 18px;
+	}
+	.properties_em_text {
+		padding-right: 6px;
+		padding-left: 7px;
+	}
+	.event_date_list {
+		padding: 7px 0 0;
+		width: 55px;
+		height: 55px;
+		font-size: 16px;
+	}
+	.section-title p {
+		font-size: 18px;
+	}
+	.em_testi_text p {
+		font-size: 17px;
+	}
+	.Khatiyar_single_event {
+		margin-top: 25px;
+	}
+	.blog-page-title h2 {
+		font-size: 17px;
+	}
+	.package_btn a {
+		padding: 5px 14px;
+		letter-spacing: 0;
+	}
+	.input-field.profile-setting {
+		margin-bottom: 20px;
+	}
+	.input-field.profile-setting.add2 {
+		width: 90%;
+		float: right;
+	}
+	.listing_day h2 {
+		font-size: 12px;
+		padding-bottom: 40px;
+	}
+	.breatcome_title_inner.style2 {
+		float: inherit;
+		margin-left: 128px;
+	}
+	.submit_button {
+		width: 65%;
+	}
+	.single_author_title a {
+		margin-left: 60px;
+	}
+	.single_author_content_thumb img {
+		top: 30%;
+	}
+	.single_author_title span {
+		margin-right: 0;
+	}
+	.single_author_text {
+		margin-left: 107px;
+	}
+	.pack_thumb.vertical-thumb {
+		width: 100%;
+	}
+	.single_package.single-vertical .package_content {
+		padding: 0 20px 30px;
+	}
+	.single_package.single-vertical {
+		padding: 26px 20px 13px;
+		overflow: hidden;
+	}
+	.pack_thumb.vertical-thumb.style2 {
+		width: 100%;
+	}
+	.package_content.vertical-content.style2 {
+		float: left;
+		padding: 13px 0 40px;
+	}
+	.pack_thumb.vertical-thumb.style2 {
+		margin-bottom: 34px;
+	}
+	.google_map_area {
+		display: none;
+	}
+	.category_icon {
+		top: 56%;
+	}
+	.search_listing_title h2 {
+		font-size: 22px;
+	}
+	.about_thumb {
+		width: 100%;
+	}
+	.about_content {
+		width: 100%;
+		padding: 40px 36px 45px 28px;
+	}
+	.about_content h1 {
+		font-size: 18px;
+	}
+}
+		
+
+
+/* -------------------------------------------------
+  Large Mobile :480px. 
+---------------------------------------------------*/
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.em-slider-button {
+		display: block;
+	}
+	.em-nivo-slider-wrapper .nivo-directionNav {
+		display: block;
+	}
+	.sbi_photo_wrap img {
+		width: 100%;
+	}
+	.sbi_photo_wrap {
+		float: left;
+		margin-bottom: 10px;
+	}
+	.footer-middle {
+		padding: 66px 0 100px;
+	}
+	.em-team-content-image img {
+		width: 100%;
+	}
+	.container {
+		width: 481px;
+	}
+	.single_feature_thumb img {
+		width: 100%;
+	}
+	.properties_thumb img {
+		width: 100%;
+	}
+	.properties_em_text {
+		padding-right: 33px;
+		padding-left: 32.5px;
+	}
+	.event-right {
+		margin-top: 25px;
+	}
+	.event_date_list {
+		padding: 18px 0 0;
+		width: 90px;
+		height: 90px;
+		font-size: 21px;
+	}
+	.package_meta i {
+		width: 46px;
+		margin-left: 20px;
+	}
+	.package_meta {
+		margin-right: 20px;
+	}
+	.single_category_thumb img {
+		width: 100%;
+	}
+	.package_btn a {
+		padding: 5px 30px;
+		letter-spacing: 0.5px;
+	}
+	.destination_content h1 {
+		font-size: 27px;
+	}
+	.breatcome_title_inner.style2 {
+		margin-left: 18px;
+		float: left;
+	}
+	.submit_button {
+		width: 45%;
+	}
+	.single_author_content_thumb img {
+		top: 41%;
+	}
+	.single_author_title a {
+		margin-left: 26px;
+	}
+	.category_icon {
+		top: 66%;
+	}
+	.about_content h1 {
+		font-size: 30px;
+	}
+}
+

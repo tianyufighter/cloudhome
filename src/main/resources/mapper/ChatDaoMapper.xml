@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.tianyufighter.springboot.dao.ChatDao">
+    <resultMap id="BaseResult" type="com.tianyufighter.springboot.domain.Chat">
+        <id column="id" property="id"/>
+        <result column="username" property="username"/>
+        <result column="to_username" property="toUsername"/>
+        <result column="image_path" property="imagePath"/>
+        <result column="message" property="message"/>
+        <result column="info_time" property="infoTime"/>
+        <result column="is_complete" property="isComplete"/>
+        <result column="username_image" property="usernameImage"/>
+    </resultMap>
+    <insert id="insertChat" parameterType="Chat" useGeneratedKeys="true" keyProperty="id">
+        insert into
+        chat(username, to_username, image_path, message, info_time, is_complete, username_image)
+        values
+        (#{username}, #{toUsername}, #{imagePath}, #{message}, #{infoTime}, #{isComplete}, #{usernameImage});
+    </insert>
+    <select id="queryAllChat" resultMap="BaseResult">
+        select * from chat where (username=#{username} and to_username=#{toUsername}) or (username=#{toUsername} and to_username=#{username});
+    </select>
+    <select id="queryChatByName" resultMap="BaseResult">
+        select * from chat where to_username=#{toUsername} and is_complete = false
+    </select>
+    <update id="updateIsComplete">
+        update chat set is_complete=true where to_username=#{toUsername} and is_complete = false;
+    </update>
+</mapper>

@@ -1,0 +1,568 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- All Meta -->
+	    <meta charset="utf-8">
+	    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	    <meta name="description" content="">
+	    <meta name="viewport" content="wid th=device-width, initial-scale=1, shrink-to-fit=no">
+	    <!-- page title -->
+		<title>失物招领</title>
+		<!------ Favicon Icon ------->
+        
+		<!-- All css -->
+		<!-- Bootstrap css-->
+	    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	    <!-- fontawesome css -->
+	    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
+	    <!-- flaticon css -->
+	    <link rel="stylesheet" href="assets/fonts/flaticon/flaticon.css">
+	    <!-- magnific css-->
+	    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+	    <!-- slick css-->
+	    <link rel="stylesheet" href="assets/css/slick.css">
+	    <!-- swiper slider css-->
+	    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+	    <!-- nice-select css-->
+	    <link rel="stylesheet" href="assets/css/nice-select.css">
+	    <!-- jquery.nice-number css-->
+	    <link rel="stylesheet" href="assets/css/jquery.nice-number.css">
+	    <!-- jquery-ui css-->
+	    <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+	    <!-- default css-->
+	    <link rel="stylesheet" href="assets/css/default.css">
+	    <!-- style css-->
+	    <link rel="stylesheet" href="assets/css/style.css">
+		<!-- jquery  -->
+		<script src="common/js/jquery-1.10.2.js" id = "js0"></script>
+
+		<!--modernizr js-->
+		<script src="assets/js/vendor/modernizr-3.6.0.min.js" id = "js1"></script>
+		<!-- Bootstrap js  -->
+		<script src="assets/js/vendor/popper.min.js" id = "js2"></script>
+		<script src="assets/js/vendor/bootstrap.min.js" id = "js3"></script>
+		<!-- Magnific-popup js-->
+		<script src="assets/js/vendor/jquery.magnific-popup.min.js" id = "js4"></script>
+		<!-- Slick js-->
+		<script src="assets/js/vendor/slick.min.js" id = "js5"></script>
+		<!-- swiper slider js-->
+		<script src="assets/js/vendor/swiper-bundle.min.js"  id = "js6"></script>
+		<!-- Isotope js-->
+		<script src="assets/js/vendor/isotope.pkgd.min.js" id = "js7"></script>
+		<!-- Slick js-->
+		<script src="assets/js/vendor/imagesloaded.pkgd.min.js" id = "js8"></script>
+		<!-- nice select js-->
+		<script src="assets/js/vendor/jquery.nice-select.min.js" id = "js9"></script>
+		<!-- select number -->
+		<script src="assets/js/vendor/jquery.nice-number.min.js" id = "js10"></script>
+		<!-- jquery-ui js-->
+		<script src="assets/js/vendor/jquery-ui.min.js" id = "js11"></script>
+		<!-- custom js  -->
+		<script src="assets/js/custom.js" id = "js12"></script>
+
+		<!-- 轮播图 -->
+	    <link rel="stylesheet" type="text/css" href="css/public.css" />
+	    <link rel="stylesheet" type="text/css" href="css/style.css" />
+	    <link rel="stylesheet" href="css/swiper.min.css" />
+	    <script type="text/javascript" src="js/jquery1.11.3.min.js"></script>
+	    <script src="js/public.js"></script>
+	    <script src="js/swiper.min.js"></script>
+	    <link rel="Icon" type="images/png" href="images/favicon1.png">
+	</head>
+	<body>
+		<!-- Start preloader area -->
+<!-- 		<div class="preloader">
+	        <div class="lds-ellipsis">
+	            <span></span>
+	            <span></span>
+	            <span></span>
+	        </div>
+	    </div> -->
+		<!-- 导航栏 -->
+		<header class="olima_header header_v1">
+			<div class="header_navigation">
+				<div class="container">
+					<div class="nav-container d-flex align-items-center justify-content-between">
+						<div class="nav-menu">
+							<!-- Navbar Close Icon -->
+							<div class="navbar-close">
+								<div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+							</div>
+							<!-- 导航栏按钮 -->
+							<nav class="main-menu">
+								<ul>
+				                  	<li class="menu-item menu-item-has-children" ><a href="index.html">社区首页</a></li>
+				                  	<li class="menu-item menu-item-has-children static"  ><a href="product.html">二手商品</a></li>
+				                  	<li class="menu-item menu-item-has-children havechoose"><a href="shiwuzhaoling.html">失物招领</a></li>
+				                  	<li class="menu-item menu-item-has-children"><a href="jianzhi.html">兼职信息</a></li>
+				                  	<li class="menu-item menu-item-has-children"><a href="todolist.html">日程安排</a></li>
+									<li class="menu-item menu-item-has-children"><a href="releaseLost.html" onclick="return judgeLog()">发布失物</a></li>
+								</ul>
+							</nav>
+							<!-- 搜索框 -->
+							<div class="nav-pushed-item">
+								<div class="header_search">
+									<form>
+										<div class="form_group">
+											<input type="search" class="form_control" placeholder="Hit enter to search" name="search" required>
+											<i class="fas fa-search"></i>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="nav-push-item">
+							<div class="header_search">
+								<form>
+									<div class="form_group">
+										<input type="search" class="form_control" placeholder="Hit enter to search" name="search" required>
+										<i class="fas fa-search"></i>
+									</div>
+								</form>
+							</div>
+						</div>
+			            <div class="main-menu">
+			              <ul>
+			              <li class="menu-item menu-item-has-children"> <a class="sign" href="register.html">进入社区</a> </li>
+			              </ul>
+			            </div>
+			            <div class="dopebox clearfloat">
+			              <div class="dope">
+			                <a href="chat.html"><img src="images/dope.png" /> <span>4</span></a>
+			              </div>
+			              <div class="login_tou">
+			                <a href="person.html"><img src="images/login.png" class="touxiang" style="height:28px;width:28px;border-radius: 50% 50%;"/></a>
+			                <div class="login_down">
+			                  <ul>
+			                    <li><img src="images/nolog.png" class="touxiang" style="height:28px;width:28px;border-radius: 50% 50%;"/> <span class="mingcheng">超人2018</span></li>
+			                    <li><a href="">个人中心</a></li>
+			                    <li><a href="">设置</a></li>
+			                    <li class = "quit"><a href="index.html">退出</a></li>
+			                  </ul>
+			                </div>
+			              </div>
+			            </div>						
+						<!-- Navbar Toggler -->
+						<div class="navbar-toggler">
+							<span></span><span></span><span></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- 轮播图区 -->
+	    <div class="banner">
+	      <div class="ban_prev">
+	        <img src="images/prev1.png" class="prev1" />
+	        <img src="images/prev2.png" class="prev2" />
+	      </div>
+	      <ul class="bannerul">
+	        <li>
+	          <a href=""><img src="images/banner/1.jpg" /></a>
+	        </li>
+	        <li>
+	          <a href=""><img src="images/banner/2.jpg" /></a>
+	        </li>
+	        <li>
+	          <a href=""><img src="images/banner/3.jpg" /></a>
+	        </li>
+	        <li>
+	          <a href=""><img src="images/banner/4.jpg" /></a>
+	        </li>
+	        <li>
+	          <a href=""><img src="images/banner/5.jpg" /></a>
+	        </li>
+	        <li>
+	          <a href=""><img src="images/banner/6.jpg" /></a>
+	        </li>
+	      </ul>
+	      <ul class="num clearfloat">
+	        <li class="active"><span></span></li>
+	        <li><span></span></li>
+	        <li><span></span></li>
+	        <li><span></span></li>
+	        <li><span></span></li>
+	        <li><span></span></li>
+	      </ul>
+
+	      <div class="ban_next">
+	        <img src="images/next1.png" class="next1" />
+	        <img src="images/next2.png" class="next2" />
+	      </div>
+	    </div>
+		<!--发信息的区域-->
+		<section class="olima_blog_masonry pt-140 pb-140"  id="blog_masonry">
+			<div class="container">
+				<div class="masonry_grid row content">
+					<div class="col-lg-4 col-md-6 col-sm-12 grid_column">
+						<div class="grid_item grid_item_content mb-60">
+							<div class="post_content">
+								<div class="post_meta">
+									<span class="calender">February 20, 2020</span>
+									<a href="#" class="comments"><i class="fas fa-user-tie"></i>tianyufighter</span></a>
+								</div>
+								<h3><a href="#">Garlic Butter Chicken Bites for Morning 123456789</a></h3>
+								<a href="#"><i class="fas fa-map-marker-alt"></i>西南科技大学东E图书馆</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 grid_column">
+						<div class="grid_item grid_item_content mb-60">
+							<div class="post_content">
+								<div class="post_meta">
+									<span class="calender">February 20, 2020</span>
+									<a href="#" class="comments"><i class="fas fa-user-tie"></i>tianyufighter</span></a>
+								</div>
+								<h3><a href="#">Garlic Butter Chicken Bites for Morning (20-Minute Recipe!)</a></h3>
+								<a href="#"><i class="fas fa-map-marker-alt"></i>西南科技大学东E图书馆</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 grid_column">
+						<div class="grid_item grid_item_content mb-60">
+							<div class="post_content">
+								<div class="post_meta">
+									<span class="calender">February 20, 2020</span>
+									<a href="#" class="comments"><i class="fas fa-user-tie"></i>tianyufighter</span></a>
+								</div>
+								<h3><a href="#">21 Grilled-Vegetable Recipes to Steal the Memorial Day Spotlight</a></h3>
+								<a href="#"><i class="fas fa-map-marker-alt"></i>西南科技大学东E图书馆</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 grid_column">
+						<div class="grid_item mb-60">
+							<div class="post_img">
+								<a href="#"><img src="assets/images/post_63.jpg" class="img-fluid" alt=""></a>
+							</div>
+							<div class="post_content">
+								<div class="post_meta">
+									<span class="calender">February 20, 2020</span>
+									<a href="#" class="comments"><i class="fas fa-user-tie"></i>tianyufighter</span></a>
+								</div>
+								<h3><a href="#">Bean Dip Gets Summery With a Roasted Tomato Puttanesca Salad</a></h3>
+								<a href="#"><i class="fas fa-map-marker-alt"></i>西南科技大学东E图书馆</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 grid_column">
+						<div class="grid_item mb-60">
+							<div class="post_img">
+								<a href="#"><img src="assets/images/post_64.jpg" class="img-fluid" alt=""></a>
+							</div>
+							<div class="post_content">
+								<div class="post_meta">
+									<span class="calender">February 20, 2020</span>
+									<a href="#" class="comments"><i class="fas fa-user-tie"></i>tianyufighter</span></a>
+								</div>
+								<h3><a href="#">The Best Soft Chocolate Chip Cookies Is There Anythin</a></h3>
+								<a href="#"><i class="fas fa-map-marker-alt"></i>西南科技大学东E图书馆</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 grid_column">
+						<div class="grid_item grid_item_content mb-60">
+							<div class="post_content">
+								<div class="post_meta">
+									<span class="calender">February 20, 2020</span>
+									<a href="#" class="comments"><i class="fas fa-user-tie"></i>tianyufighter</span></a>
+								</div>
+								<h3><a href="#">21 Grilled-Vegetable Recipes to Steal the Memorial Day Spotlight</a></h3>
+								<a href="#"><i class="fas fa-map-marker-alt"></i>西南科技大学东E图书馆</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 grid_column">
+						<div class="grid_item mb-60">
+							<div class="post_img">
+								<a href="#"><img src="assets/images/post_65.jpg" class="img-fluid" alt=""></a>
+							</div>
+							<div class="post_content">
+								<div class="post_meta">
+									<span class="calender">February 20, 2020</span>
+									<a href="#" class="comments"><i class="fas fa-user-tie"></i>tianyufighter</span></a>
+								</div>
+								<h3><a href="#">The Best Soft Chocolate Chip Cookies Is There Anythin</a></h3>
+								<a href="#"><i class="fas fa-map-marker-alt"></i>西南科技大学东E图书馆</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 grid_column">
+						<div class="grid_item grid_item_content mb-60">
+							<div class="post_content">
+								<div class="post_meta">
+									<span class="calender">February 20, 2020</span>
+<!--									<span class="comment">5 Comment</span>-->
+								</div>
+								<h3><a href="#">Garlic Butter Chicken Bites for Morning (20-Minute Recipe!)</a></h3>
+<!--								<a href="#" class="comments"><i class="fas fa-comments"></i>0 Comment</span></a>-->
+<!--								<a href="#" class="btn_heart"><i class="fas fa-heart"></i>1</a>-->
+							</div>
+						</div>
+					</div>
+					<!--自己添加-->
+					<div class="col-lg-4 col-md-6 col-sm-12 grid_column">
+						<div class="grid_item mb-60">
+							<div class="post_content">
+								<div class="post_meta">
+									<span class="calender">February 20, 2020</span>
+									<!--									<span class="comment">5 Comment</span>-->
+								</div>
+								<h3><a href="#">Garlic Butter Chicken Bites for Morning (20-Minute Recipe!)</a></h3>
+								<!--								<a href="#" class="comments"><i class="fas fa-comments"></i>0 Comment</span></a>-->
+								<!--								<a href="#" class="btn_heart"><i class="fas fa-heart"></i>1</a>-->
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 grid_column">
+						<div class="grid_item mb-60">
+							<div class="post_content">
+								<div class="post_meta">
+									<span class="calender">February 20, 2020</span>
+									<!--									<span class="comment">5 Comment</span>-->
+								</div>
+								<h3><a href="#">Garlic Butter Chicken Bites for Morning (20-Minute Recipe!)</a></h3>
+								<!--								<a href="#" class="comments"><i class="fas fa-comments"></i>0 Comment</span></a>-->
+								<!--								<a href="#" class="btn_heart"><i class="fas fa-heart"></i>1</a>-->
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 grid_column">
+						<div class="grid_item mb-60">
+							<div class="post_content">
+								<div class="post_meta">
+									<span class="calender">February 20, 2020</span>
+									<!--									<span class="comment">5 Comment</span>-->
+								</div>
+								<h3><a href="#">Garlic Butter Chicken Bites for Morning (20-Minute Recipe!)</a></h3>
+								<!--								<a href="#" class="comments"><i class="fas fa-comments"></i>0 Comment</span></a>-->
+								<!--								<a href="#" class="btn_heart"><i class="fas fa-heart"></i>1</a>-->
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 grid_column">
+						<div class="grid_item  mb-60">
+							<div class="post_content">
+								<div class="post_meta">
+									<span class="calender">February 20, 2020</span>
+									<!--									<span class="comment">5 Comment</span>-->
+								</div>
+								<h3><a href="#">Garlic Butter Chicken Bites for Morning (20-Minute Recipe!)</a></h3>
+								<!--								<a href="#" class="comments"><i class="fas fa-comments"></i>0 Comment</span></a>-->
+								<!--								<a href="#" class="btn_heart"><i class="fas fa-heart"></i>1</a>-->
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--下标-->
+				<div class="row">
+
+				<button style="width: 120px; height: 40px;margin: auto" class="jiazai">点击加载更多</button>
+				</div>
+			</div>
+		</section>
+
+		<!-- 底部 -->
+		<footer class="olima_footer footer_v1 pt-100 pb-90">
+			<div class="footer_widget">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-4 col-md-6 col-sm-12">
+							<div class="widget_box useful_link_widget">
+								<ul class="widget_link">
+									<li><a href="#">Privacy & Policy</a></li>
+									<li><a href="#">Contact</a></li>
+									<li><a href="#">About Me</a></li>
+								</ul>
+								<ul class="social_link">
+									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+									<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+									<li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-5 col-md-6 col-sm-12">
+							<div class="widget_box about_box">
+								<a href="#"><img src="images/logo.png" class="img-fluid" alt=""></a>
+								<p>Proin ac quam et lectus vestibulum blandit. Nunc maximus nibh at placerat tincidunt. Nam sem lacus, ornare non ante sed, ultricies fringilla massa. Ut congue</p>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="widget_box copyright_box">
+								<h6>Cook and Blog with <i class="fas fa-heart"></i> by Apex Nusrat</h6>
+								<p>© 2021 tianyufighter all rights <a href="http://www.tianyufighter.cn/">reserved</a>.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!--Scroll-up-->
+        <a id="scroll_up" ><i class="fas fa-angle-up"></i></a>
+	</body>
+<script>
+	// 得到cookie值
+	function getCookie(c_name)
+	{
+		if (document.cookie.length>0)
+		{
+			c_start=document.cookie.indexOf(c_name + "=")
+			if (c_start!=-1)
+			{
+				c_start=c_start + c_name.length+1
+				c_end=document.cookie.indexOf(";",c_start)
+				if (c_end==-1) c_end=document.cookie.length
+				return unescape(document.cookie.substring(c_start,c_end))
+			}
+		}
+		return ""
+	}
+	var num = 0;
+	//需要重新加载的js文件列表
+	var scriptList=[
+		{src:"common/js/jquery-1.10.2.js",id:"js0"},
+		{src:"assets/js/vendor/modernizr-3.6.0.min.js",id:"js1"},
+		{src:"assets/js/vendor/popper.min.js",id:"js2"},
+		{src:"assets/js/vendor/bootstrap.min.js",id:"js3"},
+		{src:"assets/js/vendor/jquery.magnific-popup.min.js",id:"js4"},
+		{src:"assets/js/vendor/slick.min.js",id:"js5"},
+		{src:"assets/js/vendor/swiper-bundle.min.js",id:"js6"},
+		{src:"assets/js/vendor/isotope.pkgd.min.js",id:"js7"},
+		{src:"assets/js/vendor/imagesloaded.pkgd.min.js",id:"js8"},
+		{src:"assets/js/vendor/jquery.nice-select.min.js",id:"js9"},
+		{src:"assets/js/vendor/jquery.nice-number.min.js",id:"js10"},
+		{src:"assets/js/vendor/jquery-ui.min.js",id:"js11"},
+		{src:"assets/js/custom.js",id:"js12"}
+	]
+	function reload() {
+		scriptList.forEach(x=>{
+			loadJs(x.src,x.id);
+		})
+	}
+	//重新加载js
+	function loadJs(file,id)
+	{
+		$("#"+id).remove();
+		$("<scri"+"pt >"+"</scr"+"ipt>").attr({id:id,src:file,type:'text/javascript'}).appendTo($('body'));
+	}
+	$(window).load(function() {
+		var formData = new FormData();
+		formData.set("num", num);
+		$.ajax({
+			url: "http://39.108.117.49/queryInfo",
+			type: "POST",
+			dataType : "json",
+			processData: false,
+			contentType: false,
+			data:formData,
+			success: function(obj){
+				console.log(obj);
+				for(var i = 0; i < obj.data.length; i++) {
+					var div_str = '';
+					if(obj.data[i].imagePath !== null && obj.data[i].imagePath !== "") {
+						div_str += '<div class="col-lg-4 col-md-6 col-sm-12 grid_column">';
+						div_str += '	<div class="grid_item mb-60">';
+						div_str += '	<div class="post_img">';
+						div_str += '		<a href="javascript:;"><img src="'+obj.data[i].imagePath+'" class="img-fluid" alt=""></a>';
+						div_str += '	</div>';
+						div_str += '	<div class="post_content">';
+						div_str += '		<div class="post_meta">';
+						div_str += '			<span class="calender">'+obj.data[i].releaseTime.substr(0, 10)+'</span>';
+						div_str += '			<a href="javascript:;" class="comments"><i class="fas fa-user-tie"></i>'+obj.data[i].username+'</span></a>';
+						div_str += '	</div>';
+						div_str += '	<h3><a href="javascript:;">'+obj.data[i].content+'</a></h3>';
+						div_str += '	<a href="javascript:;"><i class="fas fa-map-marker-alt"></i>'+obj.data[i].location+'</a>';
+						div_str += '</div>';
+						div_str += '</div>';
+						div_str += '</div>';
+					} else {
+						div_str += '<div class="col-lg-4 col-md-6 col-sm-12 grid_column">';
+						div_str += '<div class="grid_item grid_item_content mb-60">';
+						div_str += '	<div class="post_content">';
+						div_str += '		<div class="post_meta">';
+						div_str += '			<span class="calender">'+obj.data[i].releaseTime+'</span>';
+						div_str += '			<a href="#" class="comments"><i class="fas fa-user-tie"></i>'+obj.data[i].username+'</span></a>';
+						div_str += '	</div>';
+						div_str += '	<h3><a href="#">'+obj.data[i].content+'</a></h3>';
+						div_str += '	<a href="#"><i class="fas fa-map-marker-alt"></i>'+obj.data[i].location+'</a>';
+						div_str += '	</div>';
+						div_str += '</div>';
+						div_str += '</div>';
+					}
+					$(".content").append(div_str);
+				}
+				reload();
+				num = num + 1;
+			},
+			error: function() {
+				alert("发送出现异常了！！！");
+			}
+		});
+	})
+	$(".jiazai").click(function() {
+		alert("开始执行");
+		var formData = new FormData();
+		formData.set("num", num);
+		$.ajax({
+			url: "http://39.108.117.49/queryInfo",
+			type: "POST",
+			dataType : "json",
+			processData: false,
+			contentType: false,
+			data:formData,
+			success: function(obj){
+				console.log(obj);
+				for(var i = 0; i < obj.data.length; i++) {
+					var div_str = '';
+					if(obj.data[i].imagePath !== null && obj.data[i].imagePath !== "") {
+						div_str += '<div class="col-lg-4 col-md-6 col-sm-12 grid_column">';
+						div_str += '	<div class="grid_item mb-60">';
+						div_str += '	<div class="post_img">';
+						div_str += '		<a href="javascript:;"><img src="'+obj.data[i].imagePath+'" class="img-fluid" alt=""></a>';
+						div_str += '	</div>';
+						div_str += '	<div class="post_content">';
+						div_str += '		<div class="post_meta">';
+						div_str += '			<span class="calender">'+obj.data[i].releaseTime.substr(0, 10)+'</span>';
+						div_str += '			<a href="javascript:;" class="comments"><i class="fas fa-user-tie"></i>'+obj.data[i].username+'</span></a>';
+						div_str += '	</div>';
+						div_str += '	<h3><a href="javascript:;">'+obj.data[i].content+'</a></h3>';
+						div_str += '	<a href="javascript:;"><i class="fas fa-map-marker-alt"></i>'+obj.data[i].location+'</a>';
+						div_str += '</div>';
+						div_str += '</div>';
+						div_str += '</div>';
+					} else {
+						div_str += '<div class="col-lg-4 col-md-6 col-sm-12 grid_column">';
+						div_str += '<div class="grid_item grid_item_content mb-60">';
+						div_str += '	<div class="post_content">';
+						div_str += '		<div class="post_meta">';
+						div_str += '			<span class="calender">'+obj.data[i].releaseTime+'</span>';
+						div_str += '			<a href="#" class="comments"><i class="fas fa-user-tie"></i>'+obj.data[i].username+'</span></a>';
+						div_str += '	</div>';
+						div_str += '	<h3><a href="#">'+obj.data[i].content+'</a></h3>';
+						div_str += '	<a href="#"><i class="fas fa-map-marker-alt"></i>'+obj.data[i].location+'</a>';
+						div_str += '	</div>';
+						div_str += '</div>';
+						div_str += '</div>';
+					}
+					$(".content").append(div_str);
+				}
+				reload();
+				num = num + 1;
+			},
+			error: function() {
+				alert("发送出现异常了！！！");
+			}
+		});
+	})
+	function judgeLog() {
+		var name = getCookie("username");
+		if(name === "" || name === null) {
+			alert("您还未登录，请先登录后使用");
+			return false;
+		} else {
+			return true;
+		}
+	}
+</script>
+</html>

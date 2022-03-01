@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.tianyufighter.springboot.dao.ProductDao">
+    <resultMap id="BaseResult" type="com.tianyufighter.springboot.domain.Product">
+        <id column="id" property="id"/>
+        <result column="username" property="username"/>
+        <result column="qq" property="qq"/>
+        <result column="telephone" property="telephone"/>
+        <result column="product_info" property="productInfo"/>
+        <result column="image_path" property="imagePath"/>
+        <result column="release_time" property="releaseTime"/>
+    </resultMap>
+    <insert id="insertProduct" parameterType="Product" useGeneratedKeys="true" keyProperty="id">
+        insert into product(username, qq, telephone, product_info, image_path, release_time)
+        values(#{username}, #{qq}, #{telephone}, #{productInfo}, #{imagePath}, #{releaseTime});
+    </insert>
+    <select id="queryProduct" resultMap="BaseResult">
+        select * from product
+    </select>
+</mapper>

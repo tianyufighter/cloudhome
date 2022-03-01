@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.tianyufighter.springboot.dao.ContactpersonDao">
+    <resultMap id="BaseResult" type="com.tianyufighter.springboot.domain.Contactperson">
+        <id column="id" property="id"/>
+        <result column="master" property="master"/>
+        <result column="friend" property="friend"/>
+        <result column="friend_image" property="friendImage"/>
+    </resultMap>
+    <insert id="insertPerson" parameterType="Contactperson" useGeneratedKeys="true" keyProperty="id">
+        insert into
+        contactperson(master, friend, friend_image)
+        values
+        (#{master}, #{friend}, #{friendImage});
+    </insert>
+    <select id="queryPerson" resultMap="BaseResult">
+        select * from contactperson where master=#{master};
+    </select>
+    <select id="queryPersonByName" resultMap="BaseResult">
+        select * from contactperson where master=#{master} and friend=#{friend};
+    </select>
+    <delete id="deleteLiaison">
+        delete from contactperson where master=#{master} and friend=#{friend};
+    </delete>
+</mapper>

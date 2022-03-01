@@ -1,0 +1,525 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>日程安排</title>
+    <!-- All css -->
+    <!-- Bootstrap css-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- fontawesome css -->
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
+    <!-- flaticon css -->
+    <link rel="stylesheet" href="assets/fonts/flaticon/flaticon.css">
+    <!-- magnific css-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!-- slick css-->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <!-- swiper slider css-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- nice-select css-->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!-- jquery.nice-number css-->
+    <link rel="stylesheet" href="assets/css/jquery.nice-number.css">
+    <!-- jquery-ui css-->
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+    <!-- default css-->
+    <link rel="stylesheet" href="assets/css/default.css">
+    <!-- style css-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- jquery  -->
+    <script src="common/js/jquery-1.10.2.js" id = "js0"></script>
+
+    <!--modernizr js-->
+    <script src="assets/js/vendor/modernizr-3.6.0.min.js" id = "js1"></script>
+    <!-- Bootstrap js  -->
+    <script src="assets/js/vendor/popper.min.js" id = "js2"></script>
+    <script src="assets/js/vendor/bootstrap.min.js" id = "js3"></script>
+    <!-- Magnific-popup js-->
+    <script src="assets/js/vendor/jquery.magnific-popup.min.js" id = "js4"></script>
+    <!-- Slick js-->
+    <script src="assets/js/vendor/slick.min.js" id = "js5"></script>
+    <!-- swiper slider js-->
+    <script src="assets/js/vendor/swiper-bundle.min.js"  id = "js6"></script>
+    <!-- Isotope js-->
+    <script src="assets/js/vendor/isotope.pkgd.min.js" id = "js7"></script>
+    <!-- Slick js-->
+    <script src="assets/js/vendor/imagesloaded.pkgd.min.js" id = "js8"></script>
+    <!-- nice select js-->
+    <script src="assets/js/vendor/jquery.nice-select.min.js" id = "js9"></script>
+    <!-- select number -->
+    <script src="assets/js/vendor/jquery.nice-number.min.js" id = "js10"></script>
+    <!-- jquery-ui js-->
+    <script src="assets/js/vendor/jquery-ui.min.js" id = "js11"></script>
+    <!-- custom js  -->
+    <script src="assets/js/custom.js" id = "js12"></script>
+    <link rel="stylesheet" type="text/css" href="css/public.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.css" /> -->
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="Icon" type="images/png" href="images/favicon1.png">
+    <style>
+        /*阴影*/
+        .header_navigation{
+            box-shadow:inset 0px -15px 15px -15px #c2c2c2;
+        }
+        .clearfloat{*zoom:1;}
+        .clearfloat:before,.clearfloat:after{content:""; display:table; line-height:0;visibility:hidden;}
+        .clearfloat:after{ clear:both;}
+        .dopebox{width: 80px;float: right;height: 30px;margin-top: 8px;}
+        .dope{width: 26px;float: left;height: 26px;}
+        .dope a{display: block;width: 100%;height: 100%;position: relative;}
+        .dope span{display: inline-block;width: 16px;height: 16px;position: absolute; text-align: center;line-height: 16px;border-radius: 50%;color: #FFFFFF;background: #ff0000;font-size: 12px;left: 14px;top: 12px;}
+        .login_tou{width: 28px;height: 66px;float: right;position: relative;}
+        .login_tou a img{width: 100%}
+        .login_tou a{display: block;width: 100%;height: 100%;}
+        .login_down span{font-size: 14px;vertical-align: middle;}
+        .login_down img{vertical-align: middle;}
+        .login_down{width: 140px;display: none;position: absolute;background: #FFFFFF; box-sizing: border-box;padding: 10px; right: 0;top: 66px;box-shadow: 0px 0px 20px 0px  #EEEEEE;}
+        .login_down li{border-bottom: 1px solid #ebebeb;}
+        .login_down li:last-child{border-bottom: none;}
+        .login_down li a{display: block;padding: 10px 0;box-sizing: border-box;font-size: 14px;color: #cccccc;transition: all .3s ease-in;}
+        .login_down li:first-child{padding-bottom: 10px;box-sizing: border-box;}
+        .login_down li a:hover{color: #20AF2B;}
+        .banner{
+            height: 800px;
+            /*margin-top: 20px;*/
+        }
+
+        .havechoose{
+            border-bottom: 6px solid #3FC048;
+        }
+
+        .toumin-menu{
+            border-bottom: 6px solid transparent;
+        }
+        body {
+            /*background-image: linear-gradient(62deg, rgba(1, 95, 183, 0.9732216701) 13%, rgba(255, 122, 151, 0.5) 4%), linear-gradient(44deg, rgba(0, 43, 99, 0.0792209024) 39%, rgba(242, 140, 143, 0.5) 18%), linear-gradient(118deg, rgba(84, 202, 242, 0.0315299727) 40%, rgba(247, 155, 187, 0.5) 54%), linear-gradient(58deg, rgba(90, 90, 237, 0.1614444357) 83%, rgba(249, 156, 142, 0.5) 23%);*/
+            background-blend-mode: normal, lighten, multiply, hard-light;
+            font-family: "DM Sans", sans-serif;
+            overflow: hidden;
+        }
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .todo_list {
+            width: 800px;
+            height: 800px;
+            margin: 20px auto;
+            border-style:solid;
+            overflow-y: auto;
+            overflow-x: hidden;
+            border-radius: 50px;
+            opacity: 0.9;
+        }
+
+        .top {
+            height: 100px;
+            /* outline: red solid 1px; */
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        .search {
+            text-align: center;
+        }
+
+            .search input {
+                margin: 10px;
+                width: 650px;
+                height: 30px;
+                padding-left: 5px;
+            }
+
+            .search button {
+                width: 60px;
+                height: 30px;
+                background-color: #428bca;
+                border-color: #357ebd;
+                color: #fff;
+                border-radius: 5px;
+                border: none;
+            }
+
+        .head {
+            height: 50px;
+        }
+
+        .content {
+            height: 600px;
+            /* outline: yellow solid 1px; */
+        }
+
+        .list {
+            margin-top: 10px;
+            height: 30px;
+            display: flex;
+            text-align: center;
+        }
+
+        .left {
+            width: 50%;
+            text-indent: 40px;
+        }
+
+        .time {
+            width: 30%;
+        }
+
+        .operation {
+            width: 20%;
+            text-align: center;
+        }
+
+            .operation button {
+                padding: 5px;
+                margin-left: 5px;
+                background-color: #428bca;
+                border-color: #357ebd;
+                color: #fff;
+                border-radius: 5px;
+                border: none;
+            }
+
+        .listtodo {
+            margin: 10px 0;
+            display: flex;
+        }
+
+        .line {
+            text-decoration: line-through;
+            color: red;
+        }
+        .bigtop{
+            overflow:auto;
+            background-image: url(images/todolist.jpg);
+            position:fixed;
+            left: 0;
+            width:100%;
+            height:100%;
+            min-width: 1000px;
+            z-index:-10;
+            zoom: 1;
+            background-color: #fff;
+            background-repeat: no-repeat;
+            background-size: cover;
+            -webkit-background-size: cover;
+            -o-background-size: cover;
+            background-position: center 0;
+        }
+       
+    </style> 
+
+</head>
+<body>
+    <header class="olima_header header_v1">
+      <div class="header_navigation">
+        <div class="container">
+          <div class="nav-container d-flex align-items-center justify-content-between">
+            <div class="nav-menu">
+              <!-- Navbar Close Icon -->
+              <div class="navbar-close">
+                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+              </div>
+              <!-- 导航栏按钮 -->
+              <nav class="main-menu">
+                <ul>
+                  <li class="menu-item menu-item-has-children" ><a href="index.html">社区首页</a></li>
+                  <li class="menu-item menu-item-has-children static"><a href="product.html">二手商品</a></li>
+                  <li class="menu-item menu-item-has-children"><a href="shiwuzhaoling.html">失物招领</a></li>
+                  <li class="menu-item menu-item-has-children"><a href="jianzhi.html">兼职信息</a></li>
+                  <li class="menu-item menu-item-has-children havechoose"><a href="todolist.html">日程安排</a></li>
+                  <!-- <li class="menu-item menu-item-has-children"><a href="tiezi.html" onclick="return judgeLog()">发布帖子</a></li> -->
+                </ul>
+              </nav>
+              <!-- 搜索框 -->
+              <div class="nav-pushed-item">
+                <div class="header_search">
+                  <form>
+                    <div class="form_group">
+                      <input type="search" class="form_control" placeholder="Hit enter to search" name="search" required>
+                      <i class="fas fa-search"></i>
+                    </div>
+                  </form>
+                </div>
+              </div>              
+            </div>
+            <div class="nav-push-item">
+              <div class="header_search">
+                <form>
+                  <div class="form_group">
+                    <input type="search" class="form_control" placeholder="Hit enter to search" name="search" required>
+                    <i class="fas fa-search"></i>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="main-menu">
+              <ul>
+              <li class="menu-item menu-item-has-children"> <a class="sign" href="register.html">进入社区</a> </li>
+              </ul>
+            </div>
+            <div class="dopebox clearfloat">
+              <div class="dope">
+                <a href="chat.html"><img src="images/dope.png" /> <span>4</span></a>
+              </div>
+              <div class="login_tou">
+                <a href="person.html"><img src="images/login.png" class="touxiang" style="height:28px;width:28px;border-radius: 50% 50%;"/></a>
+                <div class="login_down">
+                  <ul>
+                    <li><img src="images/nolog.png" class="touxiang" style="height:28px;width:28px;border-radius: 50% 50%;"/> <span class="mingcheng">超人2018</span></li>
+                    <li><a href="">个人中心</a></li>
+                    <li><a href="">设置</a></li>
+                    <li class = "quit"><a href="index.html">退出</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Navbar Toggler -->
+            <div class="navbar-toggler">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>  
+    <div class="bigtop">  
+        <div class="todo_list" style="background-color: white">
+            <div class="top">
+                <div class="title">
+                    <h2 style="height: 20px;margin: 10px;font-weight: bold;font-size: 25px">TODOLIST</h2>
+                </div>
+                <div class="search">
+                    <input style="outline: black solid 3px" type="text" id="todo" onkeyup="this.value=this.value.replace(/[, ]/g,'')">
+                    <button id="add">添加</button>
+                </div>
+            </div>
+            <div class="head">
+                <div class="list">
+                    <div class="left">
+                        <h3 style="font-weight: bold;font-size: 18px" >需要处理的事情</h3>
+                    </div>
+                    <div class="time">
+                        <h3 style="font-weight: bold;font-size: 18px" >发布时间</h3>
+                    </div>
+                    <div class="operation">
+                        <h3 style="font-weight: bold;font-size: 18px" >操作</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <!-- <div class="listtodo">
+                    <div class="left">
+                        123
+                    </div>
+                    <div class="time">
+                        2019.15.26
+                    </div>
+                    <div class="operation">
+                        <button>done</button>
+                        <button>delete</button>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div> 
+    <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script>
+    function getCookie(c_name)
+    {
+        if (document.cookie.length>0)
+        {
+            c_start=document.cookie.indexOf(c_name + "=")
+            if (c_start!=-1)
+            {
+                c_start=c_start + c_name.length+1
+                c_end=document.cookie.indexOf(";",c_start)
+                if (c_end==-1) c_end=document.cookie.length
+                return unescape(document.cookie.substring(c_start,c_end))
+            }
+        }
+        return ""
+    }
+    $(window).load(function(){
+      var username = getCookie("username");
+      if(username !== "" && username !== null) {
+        $(".regcut").hide();
+        if(getCookie("headImage") !== "" && getCookie("headImage") !== null) {
+        $(".touxiang").each(function() {
+          $(this).attr("src", getCookie("headImage"));
+        })
+      }
+      $(".mingcheng").html(username);
+      console.log(getCookie("headImage"));
+      console.log("设置成功");
+      $(".dopebox").show();
+    } else {
+      $(".regcut").show();
+      $(".dopebox").hide();
+    }
+    });           
+        //id标识便于筛选
+        var count = 0;
+        // 第一次加载执行
+        window.onload = function () {
+            w_getData();
+        }
+        // localStorage 存储在本地，容量为5M或者更大，不会在请求时候携带传递，在所有同源窗口中共享，数据一直有效，除非人为删除，可作为长期数据。
+        //设置：
+        // localStorage.setItem("dat", "456");
+        //获取：
+        // localStorage.getItem("dat");
+        //删除
+        // localStorage.removeItem("dat");
+        //调取本地存储展示在页面 w_前缀是为了方便智能查找
+        function w_getData() {
+            var data = JSON.parse(localStorage.getItem('todoList'));
+            var arr = [];
+            //没有直接return掉
+            if (data == null) {
+                return
+            }
+            $('.content').html('');
+            for (var i = 0; i < data.length; i++) {
+                if (data[i].line == true) {
+                    var html = `<div class="listtodo line" listid="${data[i].id}"><div class="left">${data[i].things}</div><div class="time">${data[i].time}</div><div class="operation"><button id="done">完成</button><button id="delete">删除</button></div></div>`;
+                    // $('.content').append(html);
+                } else {
+                    var html = `<div class="listtodo" listid="${data[i].id}"><div class="left">${data[i].things}</div><div class="time">${data[i].time}</div><div class="operation"><button id="done">完成</button><button id="delete">删除</button></div></div>`;
+                }
+                // var html = `<div class="listtodo" listid="${data[i].id}"><div class="left">${data[i].things}</div><div class="time">${data[i].time}</div><div class="operation"><button id="done">done</button><button id="delete">delete</button></div></div>`;
+                $('.content').append(html);
+                if (data[i].id != null) {
+                    arr.push(data[i].id);
+                }
+            }
+            if (arr.length > 0) {
+                var max = Math.max.apply(null, arr);
+                count = max + 1;
+            }
+        }
+        $(function () {
+            //添加事件
+            $('#add').click(function () {
+                // 非空验证
+                if ($('#todo').val() == '') {
+                    return
+                }
+                //获取时间
+                var time = w_nowTime();
+                //todoList
+                var todoList = [];
+                // 先获取下本地是否存有
+                var historyTodoList = JSON.parse(localStorage.getItem("todoList"));
+                if (historyTodoList) {
+                    //本地有
+                    var todo = {};
+                    todo.things = $('#todo').val();
+                    todo.time = time;
+                    todo.id = count;
+                    historyTodoList.push(todo);
+                    localStorage.setItem('todoList', JSON.stringify(historyTodoList));
+                    count++;
+                } else {
+                    //本地無
+                    var todo = {};
+                    todo.things = $('#todo').val();
+                    todo.time = time;
+                    todo.id = count;
+                    todoList.push(todo);
+                    localStorage.setItem('todoList', JSON.stringify(todoList));
+                    count++;
+                }
+                //存储完成后清空输入框
+                $('#todo').val('');
+                // 显示在任务列表
+                w_getData();
+            })
+            // 已完成直接划掉(采用事件委托的方式，方式新增html元素找不到事件)
+            $(document).on('click', '#done', function () {
+                $(this).parent().parent().addClass('line')
+                let listids = $(this).parent().parent().attr('listid');
+                let datas = JSON.parse(localStorage.getItem('todoList'));
+                let resIndexs = datas.findIndex(v => {
+                    return v.id === parseInt(listids);
+            })
+            datas[resIndexs].line = true;
+            localStorage.setItem('todoList', JSON.stringify(datas));
+
+        })
+        //delete删除事件(采用事件委托的方式，方式新增html元素找不到事件)
+        $(document).on('click', '#delete', function () {
+            let listid = $(this).parent().parent().attr('listid');
+            let data = JSON.parse(localStorage.getItem('todoList'));
+            // ES6 提供了两个数组的实例查找相关的方法
+            // ① Array.find
+            // ② Array.findIndex
+            let res = data.find(v => {
+                return v.id === parseInt(listid);
+        })
+        let resIndex = data.findIndex(v => {
+            return v.id === parseInt(listid);
+        })
+        console.log(res, resIndex)
+        data.splice(resIndex, 1);
+        //删除后存储
+        localStorage.setItem('todoList', JSON.stringify(data));
+        w_getData();
+        })
+        //时间函数
+        function w_nowTime() {
+            var myDate = new Date();
+            var year = myDate.getFullYear();    //获取完整的年份(4位,1970-????)
+            var month = myDate.getMonth()+1;       //获取当前月份(0-11,0代表1月)
+            var day = myDate.getDate();        //获取当前日(1-31)
+            var week = myDate.getDay();         //获取当前星期X(0-6,0代表星期天)
+            var hour = myDate.getHours();       //获取当前小时数(0-23)
+            var minutes = myDate.getMinutes();     //获取当前分钟数(0-59)
+            var seconds = myDate.getSeconds();     //获取当前秒数(0-59)
+            switch (week) {
+                case 0:
+                    week = `日`
+                    break;
+                case 1:
+                    week = `一`
+                    break;
+                case 2:
+                    week = `二`
+                    break;
+                case 3:
+                    week = `三`
+                    break;
+                case 4:
+                    week = `四`
+                    break;
+                case 5:
+                    week = `五`
+                    break;
+                case 6:
+                    week = `六`
+                    break;
+                default:
+            }
+            return `${year}年${w_zero(month)}月${w_zero(day)}日${w_zero(hour)}:${w_zero(minutes)}:${w_zero(seconds)}星期${week}`
+        }
+        //不够补零
+        function w_zero(num) {
+            if (num < 10) return "0" + num; else return num;
+        }
+        })
+        // enter添加事件
+        $('#todo').keydown(function (event) {
+            var e = event || window.event;
+            if (e.keyCode == 13) {
+                $('#add').click();
+            }
+        });
+    </script>
+</body>
+
+</html>

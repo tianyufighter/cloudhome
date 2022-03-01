@@ -1,0 +1,264 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>发布二手商品</title>
+
+    <!-- All css -->
+    <!-- Bootstrap css-->
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+      <!-- fontawesome css -->
+      <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
+      <!-- flaticon css -->
+      <link rel="stylesheet" href="assets/fonts/flaticon/flaticon.css">
+      <!-- magnific css-->
+      <link rel="stylesheet" href="assets/css/magnific-popup.css">
+      <!-- slick css-->
+      <link rel="stylesheet" href="assets/css/slick.css">
+      <!-- swiper slider css-->
+      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+      <!-- nice-select css-->
+      <link rel="stylesheet" href="assets/css/nice-select.css">
+      <!-- jquery.nice-number css-->
+      <link rel="stylesheet" href="assets/css/jquery.nice-number.css">
+      <!-- jquery-ui css-->
+      <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+      <!-- default css-->
+      <link rel="stylesheet" href="assets/css/default.css">
+      <!-- style css-->
+      <link rel="stylesheet" href="assets/css/style.css">
+    <!-- jquery  -->
+    <script src="common/js/jquery-1.10.2.js" id = "js0"></script>
+
+    <!--modernizr js-->
+    <script src="assets/js/vendor/modernizr-3.6.0.min.js" id = "js1"></script>
+    <!-- Bootstrap js  -->
+    <script src="assets/js/vendor/popper.min.js" id = "js2"></script>
+    <script src="assets/js/vendor/bootstrap.min.js" id = "js3"></script>
+    <!-- Magnific-popup js-->
+    <script src="assets/js/vendor/jquery.magnific-popup.min.js" id = "js4"></script>
+    <!-- Slick js-->
+    <script src="assets/js/vendor/slick.min.js" id = "js5"></script>
+    <!-- swiper slider js-->
+    <script src="assets/js/vendor/swiper-bundle.min.js"  id = "js6"></script>
+    <!-- Isotope js-->
+    <script src="assets/js/vendor/isotope.pkgd.min.js" id = "js7"></script>
+    <!-- Slick js-->
+    <script src="assets/js/vendor/imagesloaded.pkgd.min.js" id = "js8"></script>
+    <!-- nice select js-->
+    <script src="assets/js/vendor/jquery.nice-select.min.js" id = "js9"></script>
+    <!-- select number -->
+    <script src="assets/js/vendor/jquery.nice-number.min.js" id = "js10"></script>
+    <!-- jquery-ui js-->
+    <script src="assets/js/vendor/jquery-ui.min.js" id = "js11"></script>
+    <!-- custom js  -->
+    <script src="assets/js/custom.js" id = "js12"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/public.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <script type="text/javascript" src="js/jquery1.11.3.min.js"></script>
+    <script src="js/public.js"></script>
+    <script src="js/swiper.min.js"></script>
+
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Modern Contact Form Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
+
+    <link href="css/style1.css" rel="stylesheet" type="text/css" media="all">
+    <script type="text/javascript" src="js/jquery1.11.3.min.js"></script>
+    <link rel="Icon" type="images/png" href="images/favicon1.png">
+
+    <style>
+        .bigtop{
+            overflow:auto;
+            background-image: url(images/bg9.jpg);
+            position:fixed;
+            left: 0;
+            width:100%;
+            height:100%;
+            min-width: 1000px;
+            z-index:-10;
+            zoom: 1;
+            background-color: #fff;
+            background-repeat: no-repeat;
+            background-size: cover;
+            -webkit-background-size: cover;
+            -o-background-size: cover;
+            background-position: center 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="olima_header header_v1">
+      <div class="header_navigation">
+        <div class="container">
+          <div class="nav-container d-flex align-items-center justify-content-between">
+            <div class="nav-menu">
+              <!-- Navbar Close Icon -->
+              <div class="navbar-close">
+                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+              </div>
+              <!-- 导航栏按钮 -->
+              <nav class="main-menu">
+                <ul>
+                  <li class="menu-item menu-item-has-children"><a href="index.html">社区首页</a></li>
+                  <li class="menu-item menu-item-has-children static"><a href="product.html">二手商品</a></li>
+                  <li class="menu-item menu-item-has-children"><a href="shiwuzhaoling.html">失物招领</a></li>
+                  <li class="menu-item menu-item-has-children"><a href="jianzhi.html">兼职信息</a></li>
+                  <li class="menu-item menu-item-has-children"><a href="todolist.html">日程安排</a></li>
+                  <li class="menu-item menu-item-has-children havechoose"><a href="releaseGoods.html" onclick="return judgeLog()">发布商品</a></li>
+                </ul>
+              </nav>
+              <!-- 搜索框 -->
+              <div class="nav-pushed-item">
+                <div class="header_search">
+                  <form>
+                    <div class="form_group">
+                      <input type="search" class="form_control" placeholder="Hit enter to search" name="search" required>
+                      <i class="fas fa-search"></i>
+                    </div>
+                  </form>
+                </div>
+              </div>              
+            </div>
+            <div class="nav-push-item">
+              <div class="header_search">
+                <form>
+                  <div class="form_group">
+                    <input type="search" class="form_control" placeholder="Hit enter to search" name="search" required>
+                    <i class="fas fa-search"></i>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="main-menu">
+              <ul>
+              <li class="menu-item menu-item-has-children"> <a class="sign" href="register.html">进入社区</a> </li>
+              </ul>
+            </div>
+            <div class="dopebox clearfloat">
+              <div class="dope">
+                <a href="chat.html"><img src="images/dope.png" /> <span>4</span></a>
+              </div>
+              <div class="login_tou">
+                <a href="person.html"><img src="images/login.png" class="touxiang" style="height:28px;width:28px;border-radius: 50% 50%;"/></a>
+                <div class="login_down">
+                  <ul>
+                    <li><img src="images/nolog.png" class="touxiang" style="height:28px;width:28px;border-radius: 50% 50%;"/> <span class="mingcheng">超人2018</span></li>
+                    <li><a href="">个人中心</a></li>
+                    <li><a href="">设置</a></li>
+                    <li class = "quit"><a href="index.html">退出</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>            
+            <!-- Navbar Toggler -->
+            <div class="navbar-toggler">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>  
+    <!--main-starts-here-->
+    <div class="main-w3l bigtop">
+        <h1>二手商品发布</h1>
+        <div class="w3l-submain">
+            <form id = "form" class="form-horizontal" role="form">
+                <div class="contact-agile">
+                    <h2 style="color: #3399ff">商品</h2>
+                    <label>姓名</label>
+                    <input type="text" name="name" placeholder="Thomson">
+                    <label>QQ</label>
+                    <input type="text" name="qq" placeholder="2378498">
+                    <label>电话</label>
+                    <input type="text" name="tele" placeholder="+86 13423413">
+                    <label>图片</label>
+                    <br/>
+                    <br/>
+                    <div class="moto_rig must">
+                        <input type="file" name="image"/>
+                    </div>
+                    <br/>
+                    <label>商品描述</label>
+                    <textarea name="Message" placeholder="在这输入消息....."></textarea>
+                </div>
+                <div class="send-button w3layouts">
+                    <input type="button" value="发 布" class="send">
+                </div>
+            </form>
+
+            <div class="clear"></div>
+        </div>
+
+    </div>
+    <!--//main-->
+    <!--footer-->
+    <!-- <div class="footer-w3l">
+        <p>&copy; 2021 Modern Contact Form. All rights reserved | Design by <a href="http://www.tianyufighter.cn/">tianyufighter</a></p>
+    </div> -->
+    <!--//footer-->
+
+</body>
+<script>
+    function getCookie(c_name)
+    {
+        if (document.cookie.length>0)
+        {
+            c_start=document.cookie.indexOf(c_name + "=")
+            if (c_start!=-1)
+            {
+                c_start=c_start + c_name.length+1
+                c_end=document.cookie.indexOf(";",c_start)
+                if (c_end==-1) c_end=document.cookie.length
+                return unescape(document.cookie.substring(c_start,c_end))
+            }
+        }
+        return ""
+    }
+    $(window).load(function(){
+      var username = getCookie("username");
+      if(username !== "" && username !== null) {
+        $(".regcut").hide();
+        if(getCookie("headImage") !== "" && getCookie("headImage") !== null) {
+        $(".touxiang").each(function() {
+          $(this).attr("src", getCookie("headImage"));
+        })
+      }
+      $(".mingcheng").html(username);
+      console.log(getCookie("headImage"));
+      console.log("设置成功");
+      $(".dopebox").show();
+    } else {
+      $(".regcut").show();
+      $(".dopebox").hide();
+    }
+    });     
+    $(function() {
+        $(".send").click(function() {
+            var formData = new FormData(document.getElementById("form"));
+            formData.forEach(function(value, key) {
+                console.log(key, value);
+            })
+            $.ajax({
+                url: "http://39.108.117.49/storeProduct",
+                type: "POST",
+                dataType : "json",
+                processData: false,
+                contentType: false,
+                data:formData,
+                success: function(data){
+                    alert("商品发布成功");
+                    $(':input','#form').not(':button, :submit, :reset').val('').removeAttr('checked').removeAttr('selected');
+                    window.location.href = "/product.html";
+                },
+                error: function() {
+                    alert("服务器异常...");
+                }
+            });
+        })
+    })
+</script>
+</html>

@@ -1,0 +1,1620 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>云客在线服务系统——消息区</title>
+    <link rel="stylesheet" type="text/css" href="common/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="common/css/style.css"/>
+    <script type="text/javascript" src="common/js/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="common/js/seach.js"></script>
+    <script type="text/javascript" src="common/js/scrolls.js"></script>
+    <script type="text/javascript" src="common/js/addfriends.js"></script>
+</head>
+<style>
+    /*::-webkit-scrollbar {*/
+    /*    width: 0px;*/
+    /*}*/
+    ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+        background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: transparent;
+        border-radius: 4px;
+    }
+
+    :hover::-webkit-scrollbar-thumb {
+        background: hsla(0, 0%, 53%, 0.4);
+    }
+
+    :hover::-webkit-scrollbar-track {
+        background: hsla(0, 0%, 53%, 0.1);
+    }
+    /*.tupian {*/
+    /*    height: 40px;*/
+    /*}*/
+/*    设置图片的大小*/
+    .tupian1 {
+        max-height: 40px;
+    }
+
+    .return_index{
+        position: fixed;
+        background: white;
+        top: 5px;
+        color: white;
+        cursor:pointer;
+        font-size: 20px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        position: fixed;
+        right: 5px;
+        text-align: center;
+        text-decoration: none;
+        transition: .3s;
+        z-index: 337;
+        border-radius: 50%;
+    }
+</style>
+<script>
+
+
+</script>
+<body>
+<div class="buju">
+    <a class="return_index" href="index.html"> <img src="images/return_message.png"/>  </a>
+    <!-- 消息列表-->
+    <div class="buju_center fl">
+        <div class="bcen_seach fl">
+            <div class="bcen_seach_font fl">搜索</div>
+            <input type="text" style="display:none;" class="fl"/>
+            <div class="bcen_seach_close fr" style="display:none;"><img src="common/img/close.png"/></div>
+            <div class="bcen_seach_but fr">
+                <img src="common/img/seach.png" width="100%"/>
+            </div>
+        </div>
+        <a href="javascript:void(0);" onclick="addfris()">
+            <div class="bcen_add fl">
+                <img src="common/img/add001.png"/>
+            </div>
+        </a>
+        <!--            <div class="bcen_scroll" style="position:absolute;right:0px;top:62px;display:none;"></div>-->
+        <div class="clear"></div>
+        <!--消息部分-->
+        <div class="bcen_box">
+            <div class="bcen_jilu">
+                <!--好友列表-->
+<!--                <div class="bcen_block">
+                    <div class="bcen_block_face fl">
+                        <img src="common/img/face002.jpg"/>
+                    </div>
+                    <div class="bcen_block_dian"></div>
+                    &lt;!&ndash;<div class="bcen_block_nums">1</div>&ndash;&gt;
+                    <div class="bcen_block_font fl">
+                        <div class="bcen_block_title">单机游戏交流群</div>
+                        <div class="bcen_block_fonts over">卖兜的小麦兜：今天有去的吗</div>
+                    </div>
+                    <div class="bcen_block_right fr">
+                        <div class="bcen_block_time">8:42</div>
+                    </div>
+                    <a href="javascript:;" style="font-size: 5px" class="yichu">移除</a>
+                </div>
+                <div class="bcen_block  bcen_background">
+                    <div class="bcen_block_face fl">
+                        <img src="common/img/face003.jpg"/>
+                    </div>
+                    &lt;!&ndash;<div class="bcen_block_dian"></div>
+                    <div class="bcen_block_nums">1</div>&ndash;&gt;
+                    <div class="bcen_block_font fl">
+                        <div class="bcen_block_title">lisi</div>
+                        <div class="bcen_block_fonts over">好吧</div>
+                    </div>
+                    <div class="bcen_block_right fr">
+                        <div class="bcen_block_time">4:44</div>
+                    </div>
+                    <a href="javascript:;" style="font-size: 5px"  class="yichu">移除</a>
+                </div>
+                <div class="bcen_block">
+                    <div class="bcen_block_face fl">
+                        <img src="common/img/face004.jpg"/>
+                    </div>
+                    &lt;!&ndash;<div class="bcen_block_dian"></div>
+                    <div class="bcen_block_nums">1</div>&ndash;&gt;
+                    <div class="bcen_block_font fl">
+                        <div class="bcen_block_title">首席铲屎官</div>
+                        <div class="bcen_block_fonts over">拜拜</div>
+                    </div>
+                    <div class="bcen_block_right fr">
+                        <div class="bcen_block_time">昨天</div>
+                    </div>
+                    <a href="javascript:;" style="font-size: 5px"  class="yichu">移除</a>
+                </div>
+                <div class="bcen_block">
+                    <div class="bcen_block_face fl">
+                        <img src="common/img/face005.jpg"/>
+                    </div>
+                    &lt;!&ndash;                        <div class="bcen_block_dian"></div>&ndash;&gt;
+                    <div class="bcen_block_nums">2</div>
+                    <div class="bcen_block_font fl">
+                        <div class="bcen_block_title">阿卡姆骑士</div>
+                        <div class="bcen_block_fonts over">出去玩不？</div>
+                    </div>
+                    <div class="bcen_block_right fr">
+                        <div class="bcen_block_time">8:42</div>
+                    </div>
+                    <a href="javascript:;" style="font-size: 5px"  class="yichu">移除</a>
+                </div>
+                <div class="bcen_block">
+                    <div class="bcen_block_face fl">
+                        <img src="images/head/67e1f6ce-717f-4b4d-ae57-870ab03825195.jpg"/>
+                    </div>
+                    &lt;!&ndash;                        <div class="bcen_block_dian"></div>&ndash;&gt;
+                    <div class="bcen_block_nums">1</div>
+                    <div class="bcen_block_font fl">
+                        <div class="bcen_block_title">tianyu</div>
+                        <div class="bcen_block_fonts over">哈哈哈</div>
+                    </div>
+                    <div class="bcen_block_right fr">
+                        <div class="bcen_block_time">8:42</div>
+                    </div>
+                    <a href="javascript:;" style="font-size: 5px"  class="yichu">移除</a>
+                </div>
+                <div class="bcen_block">
+                    <div class="bcen_block_face fl">
+                        <img src="images/head/726298d8-f2e1-41ac-a4ac-abc9bc0892702.jpg"/>
+                    </div>
+                    &lt;!&ndash;                        <div class="bcen_block_dian"></div>&ndash;&gt;
+                    <div class="bcen_block_nums">1</div>
+                    <div class="bcen_block_font fl">
+                        <div class="bcen_block_title">wangwu</div>
+                        <div class="bcen_block_fonts over">傻逼tianyu</div>
+                    </div>
+                    <div class="bcen_block_right fr">
+                        <div class="bcen_block_time">8:43</div>
+                    </div>
+                    <a href="javascript:;" style="font-size: 5px"  class="yichu">移除</a>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <!-- 右边对话框 -->
+    <div class="buju_right fl">
+        <div class="bri_top">
+            <!--对方的姓名-->
+            <!--                <div class="bri_top_font fl other">lisi</div>-->
+            <div class="bri_top_font fl other"></div>
+            <div class="bri_top_more fr"></div>
+            <div class="clear"></div>
+        </div>
+        <div class="bri_center">
+            <div class="bri_center_scroll" style="display:none;"></div>
+
+            <div class="bri_center_block">
+                <div class="brce_block_box">
+                    <div class="chatContent">
+                        <!--聊天内容-->
+<!--                        <div class="brce_left">
+                            <div class="brce_left_face fl">
+                                <img src="common/img/face003.jpg"/>
+                            </div>
+                            <div class="brce_left_talk fl">
+                                <div class="brce_lt_name">冰雪</div>
+                                <div class="brce_lt_jiao fl"></div>
+                                <div class="brce_lt_block fl">
+                                    <div>什么电影？</div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="brce_right">
+                            <div class="brce_left_face fr">
+                                <img src="common/img/face001.jpg"/>
+                            </div>
+                            <div class="brce_left_talk fr">
+                                <div class="brce_rt_jiao fr"></div>
+                                <div class="brce_rt_block fr">
+                                    <div>复联四啊</div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="brce_right">
+                            <div class="brce_left_face fr">
+                                <img src="common/img/face001.jpg"/>
+                            </div>
+                            <div class="brce_left_talk fr">
+                                <div class="brce_rt_jiao fr"></div>
+                                <div class="brce_rt_block fr"><img src="common/img/img001.jpg"/></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="brce_left">
+                            <div class="brce_left_face fl">
+                                <img src="common/img/face003.jpg"/>
+                            </div>
+                            <div class="brce_left_talk fl">
+                                <div class="brce_lt_name">冰雪</div>
+                                <div class="brce_lt_jiao fl"></div>
+                                <div class="brce_lt_block fl">
+                                    <div>再说吧，不一定有空</div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="brce_right">
+                            <div class="brce_left_face fr">
+                                <img src="common/img/face001.jpg"/>
+                            </div>
+                            <div class="brce_left_talk fr">
+                                <div class="brce_rt_jiao fr"></div>
+                                <div class="brce_rt_block fr">
+                                    <div>好吧</div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="brce_time">4:44</div>
+
+                        <div class="brce_left">
+                            <div class="brce_left_face fl">
+                                <img src="common/img/face010.jpg"/>
+                            </div>
+                            <div class="brce_left_talk fl">
+                                <div class="brce_lt_name">卖兜的小麦兜</div>
+                                <div class="brce_lt_jiao fl"></div>
+                                <div class="brce_lt_block fl">
+                                    <div>今天有去的吗？</div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+
+
+                        <div class="brce_left">
+                            <div class="brce_left_face fl">
+                                <img src="common/img/face003.jpg"/>
+                            </div>
+                            <div class="brce_left_talk fl">
+                                <div class="brce_lt_name">冰雪</div>
+                                <div class="brce_lt_jiao fl"></div>
+                                <div class="brce_lt_block fl">
+                                    <div>什么电影？</div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="brce_right">
+                            <div class="brce_left_face fr">
+                                <img src="common/img/face001.jpg"/>
+                            </div>
+                            <div class="brce_left_talk fr">
+                                <div class="brce_rt_jiao fr"></div>
+                                <div class="brce_rt_block fr">
+                                    <div>复联四啊</div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="brce_right">
+                            <div class="brce_left_face fr">
+                                <img src="common/img/face001.jpg"/>
+                            </div>
+                            <div class="brce_left_talk fr">
+                                <div class="brce_rt_jiao fr"></div>
+                                <div class="brce_rt_block fr"><img src="common/img/img001.jpg"/></div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="brce_left">
+                            <div class="brce_left_face fl">
+                                <img src="common/img/face003.jpg"/>
+                            </div>
+                            <div class="brce_left_talk fl">
+                                <div class="brce_lt_name">冰雪</div>
+                                <div class="brce_lt_jiao fl"></div>
+                                <div class="brce_lt_block fl">
+                                    <div>再说吧，不一定有空</div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="brce_right">
+                            <div class="brce_left_face fr">
+                                <img src="common/img/face001.jpg"/>
+                            </div>
+                            <div class="brce_left_talk fr">
+                                <div class="brce_rt_jiao fr"></div>
+                                <div class="brce_rt_block fr">
+                                    <div>好吧</div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="brce_time">4:44</div>
+
+                        <div class="brce_left">
+                            <div class="brce_left_face fl">
+                                <img src="common/img/face010.jpg"/>
+                            </div>
+                            <div class="brce_left_talk fl">
+                                <div class="brce_lt_name">卖兜的小麦兜</div>
+                                <div class="brce_lt_jiao fl"></div>
+                                <div class="brce_lt_block fl">
+                                    <div>今天有去的吗？</div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--输入消息的部分-->
+        <form id="form2" class="form-horizontal" role="form">
+            <div class="bri_bottom">
+                <div class="tupian">
+                    <img class="tupian1" src="" title=""/>
+                    <button class="shan" style="display: none">删除</button>
+                </div>
+                <!--当鼠标移动的表情的图片时显示的文字-->
+                <div class="bri_bottom_face fl" title="表情"></div>
+                <!--存储表情图片-->
+                <div class="bri_bottom_look" style="display:none;">
+                    <div class="bri_blook_center">
+                        <div class="fl">
+                            <img src="common/img/look001.png" title="微笑"/>
+                        </div>
+                        <div class="fl">
+                            <img src="common/img/look002.png" title="撇嘴"/>
+                        </div>
+                        <div class="fl">
+                            <img src="common/img/look003.png" title="色"/>
+                        </div>
+                        <div class="fl">
+                            <img src="common/img/look004.png" title="发呆"/>
+                        </div>
+                        <div class="fl">
+                            <img src="common/img/look005.png" title="得意"/>
+                        </div>
+                        <div class="fl">
+                            <img src="common/img/look006.png" title="流泪"/>
+                        </div>
+                        <div class="fl">
+                            <img src="common/img/look007.png" title="害羞"/>
+                        </div>
+                        <div class="fl">
+                            <img src="common/img/look008.png" title="闭嘴"/>
+                        </div>
+                        <div class="fl">
+                            <img src="common/img/look009.png" title="睡"/>
+                        </div>
+                        <div class="fl">
+                            <img src="common/img/look0010.png" title="大哭"/>
+                        </div>
+                        <div class="fl">
+                            <img src="common/img/look0011.png" title="尴尬"/>
+                        </div>
+                        <div class="fl">
+                            <img src="common/img/look0012.png" title="发怒"/>
+                        </div>
+                        <div class="fl">
+                            <img src="common/img/look0013.png" title="调皮"/>
+                        </div>
+                        <div class="fl">
+                            <img src="common/img/look0014.png" title="龇牙"/>
+                        </div>
+                        <div class="fl">
+                            <img src="common/img/look0015.png" title="惊讶"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="bri_bottom_file fl" title="发送文件" name="imagePath"></div>
+                <input type="file" class="bri_bottom_files" style="display:none;" name="messageImage" onchange="showName(this)"/>
+                <div class="clear"></div>
+                <textarea name="message"></textarea>
+                <div class="bri_bottom_but fr fasong">发送</div>
+                <div class="bri_bottom_empty" style="display:none;">不能发送空白信息</div>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+<script>
+    // 存储用户选择的图片的变量
+    var SendImagePath = "";
+    // 将用户选择的图片显示出来
+    function showName(target){
+        // 先获取用户上传的文件对象
+        let fileObj = target.files[0];
+        // 生成一个文件读取的内置对象
+        let fileReader = new FileReader();
+        // 将文件对象传递给内置对象
+        fileReader.readAsDataURL(fileObj); //这是一个异步执行的过程，所以需要onload回调函数执行读取数据后的操作
+        // 将读取出文件对象替换到img标签
+        fileReader.onload = function(){  // 等待文件阅读器读取完毕再渲染图片
+            SendImagePath = fileReader.result;
+            $('.tupian1').attr('src',fileReader.result)
+        }
+        document.getElementsByClassName("shan")[0].style.display="inline";
+    }
+    function getCookie(c_name) {
+        if (document.cookie.length > 0) {
+            c_start = document.cookie.indexOf(c_name + "=")
+            if (c_start != -1) {
+                c_start = c_start + c_name.length + 1
+                c_end = document.cookie.indexOf(";", c_start)
+                if (c_end == -1) c_end = document.cookie.length
+                return unescape(document.cookie.substring(c_start, c_end))
+            }
+        }
+        return ""
+    }
+
+    function friface() {
+        var image_width = $(".ba_lfb_face").width();
+        var image_height = $(".ba_lfb_face").height();
+        var image_bi = image_width / image_height;
+        $(".ba_lfb_face img").each(function () {
+            images_width = $(this).width();
+            var images_height = $(this).height();
+            var images_bi = images_width / images_height;
+            if (image_bi < images_bi) {
+                $(this).css("height", image_height);
+                var imgwidth = image_height * images_bi;
+                var widths = 0 - (imgwidth - image_width) / 2;
+                $(this).css("margin-left", widths);
+            } else {
+                $(this).css("width", "100%");
+                var imgheight = image_width / images_bi;
+                var heights = 0 - (imgheight - image_height) / 2;
+                $(this).css("margin-top", heights);
+            }
+        })
+    }
+
+    $(function () {
+        img();
+    })
+
+    function img() {
+        var img_width = $(".brce_left_face").width();
+        var img_height = $(".brce_left_face").height();
+        var img_bi = img_width / img_height;
+        $(".brce_left_face img").each(function () {
+            var imgs_width = $(this).width();
+            var imgs_height = $(this).height();
+            var imgs_bi = imgs_width / imgs_height;
+            if (img_bi < imgs_bi) {
+                $(this).css("height", img_height);
+                var imgswidth = img_height * imgs_bi;
+                var wid = 0 - (imgswidth - img_width) / 2;
+                $(this).css("margin-left", wid);
+            } else {
+                $(this).css("width", "100%");
+                var imgsheight = img_width / img_bi;
+                var hei = 0 - (imgsheight - img_height) / 2;
+                $(this).css("margin-top", hei);
+            }
+        })
+    }
+
+    function fun1() {
+        res();
+        scrolls();
+        chatscr();
+        $(window).resize(function () {
+            res();
+            scrolls();
+            chatscr();
+        })
+
+        function res() {
+            var winds = $(window).height();
+            var windw = $(window).width();
+            //最左边高度
+            $(".buju_left").height(winds);
+            //中间高度
+            $(".buju_center").height(winds);
+            //右边高度
+            $(".buju_right").height(winds);
+            $(".yinyings").height(winds);
+            $(".buju_install").height(winds - 61);
+            $(".bcen_box").height(winds - 62);
+            $(".buju_right").width(windw - 310);
+            $(".bri_bottom").width(windw - 310);
+            $(".brce_block_box").width(windw - 310);
+            $(".buju_right textarea").width(windw - 360);
+            $(".bri_center").height(winds - 205);
+            $(".brce_block_box").height(winds - 205);
+        }
+
+        $(".bcen_block").mouseenter(function () {
+            $(this).not(".bcen_background").css("background-color", "#ddd");
+        })
+        $(".bcen_block").mouseleave(function () {
+            $(this).not(".bcen_background").css("background-color", "#e7e8e9");
+        })
+
+        $(".bcen_block").click(function () {
+            console.log("点了我一下");
+            $(this).removeAttr("style");
+            $(this).addClass("bcen_background");
+            $(".bcen_block").not(this).removeClass("bcen_background");
+            $(this).find(".bcen_block_dian").css("display", "none");
+            // $(this).find(".bcen_block_nums").css("display", "none");
+            $(this).find(".bcen_block_nums").remove();
+        })
+
+        $(".bri_bottom textarea").focus(function () {
+            $(".bri_bottom").css("background-color", "#fff");
+        })
+        $(".bri_bottom textarea").blur(function () {
+            $(".bri_bottom").css("background-color", "#f5f5f5");
+        })
+
+        $(".bri_bottom_face").click(function () {
+            $(".bri_bottom_look").css("display", "block");
+        })
+
+        $(document).bind("click", function (e) {
+            //id为menu的是菜单，id为open的是打开菜单的按钮
+            if ($(e.target).closest(".bri_bottom_look").length == 0 && $(e.target).closest(".bri_bottom_face").length == 0) {
+                //点击id为menu之外且id不是不是open，则触发
+                $(".bri_bottom_look").css("display", "none");
+            }
+        })
+
+        // $(".bri_bottom_file").click(function () {
+        //     console.log("log");
+        //     $(".bri_bottom_files").click();
+        // })
+
+        $(".bri_bottom_but").click(function () {
+            var chats = $(".bri_bottom textarea").val();
+            var apps_one = "<div class='brce_right'><div class='brce_left_face fr'><img src='" + getCookie("headImage") + "'/></div><div class='brce_left_talk fr'><div class='brce_rt_jiao fr'></div><div class='brce_rt_block fr'><div>";
+            var apps_two = "</div></div></div><div class='clear'></div></div>";
+            // if (chats === "" && $('.bri_bottom_files').val() === "") {
+            if (chats === "" && SendImagePath === "") {
+                // console.log("zhixing1 ====== chats = " + chats + "   SendImagePath = " + SendImagePath);
+                // console.log("val = " + $('.bri_bottom_files').val())
+                // $('.bri_bottom_files').val("");
+                // $(".bri_bottom_empty").css("display", "block");
+                // setTimeout(function () {
+                //     $(".bri_bottom_empty").hide();
+                // }, 2000)
+            } else {
+                console.log("zhixing1----you");
+                if(SendImagePath !== "") {
+                    chats = '<img style="display: block" src="'+SendImagePath+'"/>' + chats;
+                    SendImagePath = "";
+                }
+                $('.bri_bottom_files').val("");
+                // $(".bri_center").append(apps_one + chats + apps_two);
+                $(".chatContent").append(apps_one + chats + apps_two);
+                document.getElementsByClassName("brce_block_box")[0].scrollTo({
+                    left: 0,
+                    top: document.getElementsByClassName("brce_block_box")[0].scrollHeight
+                });
+                img();
+                $(".bri_bottom textarea").val("");
+
+            }
+        })
+
+        $(".bri_top_more").click(function () {
+            var bl = $(".buju_install").css("display");
+            if (bl == "block") {
+                $(".buju_install").css("display", "none");
+            } else if (bl == "none") {
+                $(".buju_install").css("display", "block");
+            }
+        })
+
+        $(".bin_two_but").click(function () {
+            var imgs = $(this).find("img").attr("src");
+            imgs = imgs.replace("common/img/", "");
+            imgs = imgs.replace(".png", "");
+            if (imgs == "butclose") {
+                $(this).find("img").attr("src", "common/img/butopen.png");
+            } else if (imgs == "butopen") {
+                $(this).find("img").attr("src", "common/img/butclose.png");
+            }
+        })
+
+        $(".bin_three input").focus(function () {
+            $(".bin_three").css("background-color", "#fff");
+        })
+
+        $(".bin_three input").keyup(function () {
+            var val = $(this).val();
+            if (val == "") {
+                $(".bin_three_close").css("display", "none");
+                $(".bin_three_seach").css("display", "block");
+            } else if (val != "") {
+                $(".bin_three_close").css("display", "block");
+                $(".bin_three_seach").css("display", "none");
+            }
+        })
+
+        $(".bin_three_close").click(function () {
+            $(".bin_three input").val("");
+            $(".bin_three_close").css("display", "none");
+            $(".bin_three_seach").css("display", "block");
+            $(".bin_three").css("background-color", "#f5f5f5");
+        })
+
+        $(".bin_four_more").click(function () {
+            var hts = $(this).find("label").html();
+            if (hts == "查看更多群成员") {
+                $(this).find("label").html("收起群成员");
+                $(this).find("img").attr("src", "common/img/up001.png");
+            } else if (hts == "收起群成员") {
+                $(this).find("label").html("查看更多群成员");
+                $(this).find("img").attr("src", "common/img/down001.png");
+            }
+        })
+
+        $(".bin_five_text").mouseenter(function () {
+            $(this).next("img").css("display", "block");
+        })
+
+        $(".bin_five_text").mouseleave(function () {
+            $(this).next("img").css("display", "none");
+        })
+
+        $(".bin_five_text").click(function () {
+            $(this).next("input").attr("type", "text");
+            $(this).css("display", "none");
+            $(this).next("input").focus();
+        })
+
+        $(".bin_five_text").next("input").blur(function () {
+            var bin = $(this).val();
+            if (bin != "") {
+                $(this).prev(".bin_five_text").html(bin);
+            }
+            $(this).prev(".bin_five_text").css("display", "block");
+            $(this).attr("type", "hidden");
+        })
+
+        $(".bin_five_text").eq(0).next("input").blur(function () {
+            var bin = $(this).val();
+            $(".bri_top_font").html(bin);
+        })
+
+        $(".bin_five_butname").click(function () {
+            var imgs = $(this).attr("src");
+            imgs = imgs.replace("common/img/", "");
+            imgs = imgs.replace(".png", "");
+            if (imgs == "butclose") {
+                $(this).attr("src", "common/img/butopen.png");
+                $(".brce_lt_name").css("display", "block");
+            } else if (imgs == "butopen") {
+                $(this).attr("src", "common/img/butclose.png");
+                $(".brce_lt_name").css("display", "none");
+            }
+        })
+
+        $(".bin_five_but").click(function () {
+            var imgs = $(this).attr("src");
+            imgs = imgs.replace("common/img/", "");
+            imgs = imgs.replace(".png", "");
+            if (imgs == "butclose") {
+                $(this).attr("src", "common/img/butopen.png");
+            } else if (imgs == "butopen") {
+                $(this).attr("src", "common/img/butclose.png");
+            }
+        })
+
+        $(".bin_five_note").click(function () {
+            $(".bin_note").css("display", "block");
+        })
+
+        $(".bin_note_close").click(function () {
+            $(".bin_note").css("display", "none");
+        })
+    }
+
+    $(function () {
+        res();
+        scrolls();
+        chatscr();
+        $(window).resize(function () {
+            res();
+            scrolls();
+            chatscr();
+        })
+
+        function res() {
+            var winds = $(window).height();
+            var windw = $(window).width();
+            //最左边高度
+            $(".buju_left").height(winds);
+            //中间高度
+            $(".buju_center").height(winds);
+            //右边高度
+            $(".buju_right").height(winds);
+            $(".yinyings").height(winds);
+            $(".buju_install").height(winds - 61);
+            $(".bcen_box").height(winds - 62);
+            $(".buju_right").width(windw - 310);
+            $(".bri_bottom").width(windw - 310);
+            $(".brce_block_box").width(windw - 310);
+            $(".buju_right textarea").width(windw - 360);
+            $(".bri_center").height(winds - 205);
+            $(".brce_block_box").height(winds - 205);
+        }
+
+        $(".bcen_block").mouseenter(function () {
+            $(this).not(".bcen_background").css("background-color", "#ddd");
+        })
+        $(".bcen_block").mouseleave(function () {
+            $(this).not(".bcen_background").css("background-color", "#e7e8e9");
+        })
+        $(".bcen_block").click(function () {
+            console.log("点了我两下五五");
+            $(this).removeAttr("style");
+            $(this).addClass("bcen_background");
+            $(".bcen_block").not(this).removeClass("bcen_background");
+            $(this).find(".bcen_block_dian").css("display", "none");
+            // $(this).find(".bcen_block_nums").css("display", "none");
+            $(this).find(".bcen_block_nums").remove();
+        })
+
+        $(".bri_bottom textarea").focus(function () {
+            $(".bri_bottom").css("background-color", "#fff");
+        })
+        $(".bri_bottom textarea").blur(function () {
+            $(".bri_bottom").css("background-color", "#f5f5f5");
+        })
+
+        $(".bri_bottom_face").click(function () {
+            $(".bri_bottom_look").css("display", "block");
+        })
+
+        $(document).bind("click", function (e) {
+            //id为menu的是菜单，id为open的是打开菜单的按钮
+            if ($(e.target).closest(".bri_bottom_look").length == 0 && $(e.target).closest(".bri_bottom_face").length == 0) {
+                //点击id为menu之外且id不是不是open，则触发
+                $(".bri_bottom_look").css("display", "none");
+            }
+        })
+        $(".bri_bottom_file").click(function () {
+            $(".bri_bottom_files").click();
+        })
+
+        $(".bri_bottom_but").click(function () {
+            var chats = $(".bri_bottom textarea").val();
+            var apps_one = "<div class='brce_right'><div class='brce_left_face fr'><img src='" + getCookie("headImage") + "'/></div><div class='brce_left_talk fr'><div class='brce_rt_jiao fr'></div><div class='brce_rt_block fr'><div>";
+            var apps_two = "</div></div></div><div class='clear'></div></div>";
+            // if (chats == "" && $('.bri_bottom_files').val() === "") {
+            if (chats === "" && SendImagePath === "") {
+                console.log("zhixing2 ====== chats = " + chats + "   SendImagePath = " + SendImagePath);
+                // console.log("val = " + $('.bri_bottom_files').val())
+                // $('.bri_bottom_files').val("");
+                $(".bri_bottom_empty").css("display", "block");
+                setTimeout(function () {
+                    $(".bri_bottom_empty").hide();
+                }, 2000)
+            } else {
+                console.log("zhixing2----you");
+                // console.log("path = " + $('.bri_bottom_files').val());
+                if(SendImagePath !== "") {
+                    chats = '<img style="display: block" src="'+SendImagePath+'"/>' + chats;
+                    SendImagePath = "";
+                }
+                $(".bri_bottom_files").val("");
+                // $(".bri_center").append(apps_one + chats + apps_two);
+                $(".chatContent").append(apps_one + chats + apps_two);
+                document.getElementsByClassName("brce_block_box")[0].scrollTo({
+                    left: 0,
+                    top: document.getElementsByClassName("brce_block_box")[0].scrollHeight
+                });
+                img();
+                $(".bri_bottom textarea").val("");
+
+            }
+        })
+
+        $(".bri_top_more").click(function () {
+            var bl = $(".buju_install").css("display");
+            if (bl == "block") {
+                $(".buju_install").css("display", "none");
+            } else if (bl == "none") {
+                $(".buju_install").css("display", "block");
+            }
+        })
+
+        $(".bin_two_but").click(function () {
+            var imgs = $(this).find("img").attr("src");
+            imgs = imgs.replace("common/img/", "");
+            imgs = imgs.replace(".png", "");
+            if (imgs == "butclose") {
+                $(this).find("img").attr("src", "common/img/butopen.png");
+            } else if (imgs == "butopen") {
+                $(this).find("img").attr("src", "common/img/butclose.png");
+            }
+        })
+
+        $(".bin_three input").focus(function () {
+            $(".bin_three").css("background-color", "#fff");
+        })
+
+        $(".bin_three input").keyup(function () {
+            var val = $(this).val();
+            if (val == "") {
+                $(".bin_three_close").css("display", "none");
+                $(".bin_three_seach").css("display", "block");
+            } else if (val != "") {
+                $(".bin_three_close").css("display", "block");
+                $(".bin_three_seach").css("display", "none");
+            }
+        })
+
+        $(".bin_three_close").click(function () {
+            $(".bin_three input").val("");
+            $(".bin_three_close").css("display", "none");
+            $(".bin_three_seach").css("display", "block");
+            $(".bin_three").css("background-color", "#f5f5f5");
+        })
+
+        $(".bin_four_more").click(function () {
+            var hts = $(this).find("label").html();
+            if (hts == "查看更多群成员") {
+                $(this).find("label").html("收起群成员");
+                $(this).find("img").attr("src", "common/img/up001.png");
+            } else if (hts == "收起群成员") {
+                $(this).find("label").html("查看更多群成员");
+                $(this).find("img").attr("src", "common/img/down001.png");
+            }
+        })
+
+        $(".bin_five_text").mouseenter(function () {
+            $(this).next("img").css("display", "block");
+        })
+
+        $(".bin_five_text").mouseleave(function () {
+            $(this).next("img").css("display", "none");
+        })
+
+        $(".bin_five_text").click(function () {
+            $(this).next("input").attr("type", "text");
+            $(this).css("display", "none");
+            $(this).next("input").focus();
+        })
+
+        $(".bin_five_text").next("input").blur(function () {
+            var bin = $(this).val();
+            if (bin != "") {
+                $(this).prev(".bin_five_text").html(bin);
+            }
+            $(this).prev(".bin_five_text").css("display", "block");
+            $(this).attr("type", "hidden");
+        })
+
+        $(".bin_five_text").eq(0).next("input").blur(function () {
+            var bin = $(this).val();
+            $(".bri_top_font").html(bin);
+        })
+
+        $(".bin_five_butname").click(function () {
+            var imgs = $(this).attr("src");
+            imgs = imgs.replace("common/img/", "");
+            imgs = imgs.replace(".png", "");
+            if (imgs == "butclose") {
+                $(this).attr("src", "common/img/butopen.png");
+                $(".brce_lt_name").css("display", "block");
+            } else if (imgs == "butopen") {
+                $(this).attr("src", "common/img/butclose.png");
+                $(".brce_lt_name").css("display", "none");
+            }
+        })
+
+        $(".bin_five_but").click(function () {
+            var imgs = $(this).attr("src");
+            imgs = imgs.replace("common/img/", "");
+            imgs = imgs.replace(".png", "");
+            if (imgs == "butclose") {
+                $(this).attr("src", "common/img/butopen.png");
+            } else if (imgs == "butopen") {
+                $(this).attr("src", "common/img/butclose.png");
+            }
+        })
+
+        $(".bin_five_note").click(function () {
+            $(".bin_note").css("display", "block");
+        })
+
+        $(".bin_note_close").click(function () {
+            $(".bin_note").css("display", "none");
+        })
+
+    })
+    $(function () {
+        var image_widths = $(".bcen_block_face").width();
+        var image_heights = $(".bcen_block_face").height();
+        var image_bis = image_widths / image_heights;
+        $(".bcen_block_face img").each(function () {
+            var images_widths = $(this).width();
+            var images_heights = $(this).height();
+            var images_bis = images_widths / images_heights;
+            if (image_bis < images_bis) {
+                $(this).css("height", image_heights);
+                var imgwidths = image_heights * images_bis;
+                var widthss = 0 - (imgwidths - image_widths) / 2;
+                $(this).css("margin-left", widthss);
+            } else {
+                $(this).css("width", "100%");
+                var imgheights = image_widths / images_bis;
+                var heightss = 0 - (imgheights - image_heights) / 2;
+                $(this).css("margin-top", heightss);
+            }
+        })
+    })
+    $(".fasong").unbind("click");
+    $(".fasong").click(function () {
+        // 获取对方的姓名
+        var toUsername = $(".other").text();
+        // 清楚选择图片标签的属性值
+        $(".tupian1").attr("src", ".");
+        document.getElementsByClassName("shan")[0].style.display="none";
+        var username = getCookie("username");
+        var formData = new FormData(document.getElementById("form2"));
+        formData.set("username", username);
+        formData.set("toUsername", toUsername);
+        formData.set("expression", SendImagePath);
+        formData.forEach(function (value, key) {
+            console.log(key, value);
+        })
+        $.ajax({
+            url: "http://39.108.117.49/insertMessage",
+            type: "POST",
+            dataType: "json",
+            processData: false,
+            contentType: false,
+            data: formData,
+            success: function (obj) {
+                // $('#addModal').modal('hide') //关闭模态框
+                // alert(d.message);
+                // example2.ajax.reload();
+            },
+            error: function () {
+                // alert("发送出现异常了！！！");
+            }
+        });
+    })
+    // 假设每隔5秒发送一次请求
+    $(window).load(function () {
+        // 查询好友列表
+        var formData = new FormData();
+        formData.set("username", getCookie("username"))
+        $.ajax({
+            url: "http://39.108.117.49/queryFriend",
+            type: "POST",
+            dataType: "json",
+            processData: false,
+            contentType: false,
+            data: formData,
+            success: function (obj) {
+                console.log(obj);
+                for (var i = 0; i < obj.data.length; i++) {
+                    var temp = checkUser(obj.data[i].friend);
+                    if (temp !== null) {
+
+                    } else {
+                        var div_str = '   <div class="bcen_block">';
+                        div_str += '           <div class="bcen_block_face fl">';
+                        div_str += '               <img src="' + obj.data[i].friendImage + '" style="width: 100%"/>';
+                        div_str += '          </div>';
+                        div_str += '         <div class="bcen_block_font fl">';
+                        div_str += '             <div class="bcen_block_title">' + obj.data[i].friend + '</div>';
+                        div_str += '            <div class="bcen_block_fonts over"></div>';
+                        div_str += '         </div>';
+                        div_str += '          <div class="bcen_block_right fr">';
+                        div_str += '              <div class="bcen_block_time">今天</div>';
+                        div_str += '          </div>';
+                        div_str += '<a href="javascript:;" style="font-size: 5px" class="yichu">移除</a>';
+                        div_str += '       </div>';
+                        $(".bcen_jilu").append(div_str);
+                        fun1();
+                        $(".bcen_block").each(function () {
+                            $(this).unbind("click");
+                            $(this).click(function () {
+                                // 获取点击的用户名
+                                var toUsername = $(this).find(".bcen_block_title").text();
+                                $(".other").text(toUsername);
+                                toUsername = toUsername;
+                                // 当前用户的名字
+                                var username = getCookie("username");
+                                // 清空聊天界面的所有内容
+                                $(".chatContent").empty();
+                                var formData = new FormData();
+                                formData.set("username", username);
+                                formData.set("toUsername", toUsername);
+                                $.ajax({
+                                    url: "http://39.108.117.49/queryAllMessage",
+                                    type: "POST",
+                                    dataType: "json",
+                                    processData: false,
+                                    contentType: false,
+                                    data: formData,
+                                    success: function (obj) {
+                                        console.log("xiaoxi = " + obj);
+                                        console.log(obj);
+                                        for (var i = 0; i < obj.data.length; i++) {
+                                            var div_str;
+                                            if (obj.data[i].username === toUsername) {
+                                                div_str = '<div class="brce_left">';
+                                                div_str += '<div class="brce_left_face fl">';
+                                                div_str += '   <img src="' + obj.data[i].usernameImage + '" style="width: 100%;height: 100%;background-size: cover"/>';
+                                                div_str += ' </div>';
+                                                div_str += '  <div class="brce_left_talk fl">';
+                                                div_str += '     <div class="brce_lt_name">' + obj.data[i].username + '</div>';
+                                                div_str += '    <div class="brce_lt_jiao fl"></div>';
+                                                div_str += '     <div class="brce_lt_block fl">';
+                                                div_str += '          <div>';
+                                                if(obj.data[i].imagePath !== "") {
+                                                    div_str += '<img style="display: block" src = "'+obj.data[i].imagePath+'"/>';
+                                                }
+                                                div_str += obj.data[i].message;
+                                                div_str += '</div>';
+                                                div_str += '      </div>';
+                                                div_str += '  </div>';
+                                                div_str += '   <div class="clear"></div>';
+                                                div_str += '</div>';
+                                            } else {
+                                                div_str = '<div class="brce_right">';
+                                                div_str += ' <div class="brce_left_face fr">';
+                                                div_str += '    <img src="' + getCookie("headImage") + '" style="width: 100%;height: 100%;background-size: cover"/>';
+                                                div_str += ' </div>';
+                                                div_str += ' <div class="brce_left_talk fr">';
+                                                div_str += '     <div class="brce_rt_jiao fr"></div>';
+                                                div_str += '    <div class="brce_rt_block fr">';
+                                                div_str += '        <div>';
+                                                if(obj.data[i].imagePath !== "") {
+                                                    div_str += '<img style="display: block" src = "'+obj.data[i].imagePath+'"/>';
+                                                }
+                                                div_str += obj.data[i].message;
+                                                div_str += '</div>';
+                                                div_str += '    </div>';
+                                                div_str += ' </div>';
+                                                div_str += ' <div class="clear"></div>';
+                                                div_str += ' </div>';
+                                            }
+                                            $(".chatContent").append(div_str);
+                                            document.getElementsByClassName("brce_block_box")[0].scrollTo({
+                                                left: 0,
+                                                top: document.getElementsByClassName("brce_block_box")[0].scrollHeight
+                                            });
+                                        }
+                                    },
+                                    error: function () {
+                                    }
+                                });
+                            })
+                        })
+                    }
+                }
+            },
+            error: function () {
+            }
+        })
+        getApi();
+    })
+
+    // 判断消息列表中是否有该用户
+    function checkUser(username) {
+        var lists = $(".bcen_block_title");
+        for (var i = 0; i < lists.length; i++) {
+            if (lists[i].innerHTML === username) {
+                return lists[i];
+            }
+        }
+        return null;
+    }
+
+    var t;
+
+    function getApi() {
+        var formData = new FormData();
+        formData.set("toUsername", getCookie("username"));
+        // 设置时间5秒
+        t = setTimeout(getApi, 5 * 1000);
+        $.ajax({
+            url: "http://39.108.117.49/queryMessageByName",
+            type: "POST",
+            dataType: "json",
+            processData: false,
+            contentType: false,
+            data: formData,
+            success: function (obj) {
+                console.log(obj);
+                if (obj.code === 200) {
+                    for (var i = 0; i < obj.data.length; i++) {
+                        var temp = checkUser(obj.data[i].username);
+                        // 如果用户存在，则直接设置其值
+                        if (temp !== null) {
+                            $(temp).next("div").text(obj.data[i].message);
+                            // 将未读消息加1
+                            if ($(temp).parent().parent().find(".bcen_block_nums").length === 1) {
+                                var t = parseInt($(temp).parent().parent().find(".bcen_block_nums").text()) + 1;
+                                if (t >= 100) {
+                                    t = 99;
+                                }
+                                $(temp).parent().parent().find(".bcen_block_nums").text(t);
+                            } else {
+                                if ($(".other").text() !== obj.data[i].username) {
+                                    var div_str = '<div class="bcen_block_nums">1</div>';
+                                    $(temp).parent().parent().append(div_str);
+                                }
+                            }
+                        } else {
+                            var div_str = '   <div class="bcen_block">';
+                            div_str += '           <div class="bcen_block_face fl">';
+                            div_str += '               <img src="' + obj.data[i].usernameImage + '" style="width: 100%"/>';
+                            div_str += '          </div>';
+                            div_str += '          <div class="bcen_block_nums">1</div>';
+                            div_str += '         <div class="bcen_block_font fl">';
+                            div_str += '             <div class="bcen_block_title">' + obj.data[i].username + '</div>';
+                            div_str += '            <div class="bcen_block_fonts over">' + obj.data[i].message + '</div>';
+                            div_str += '         </div>';
+                            div_str += '          <div class="bcen_block_right fr">';
+                            div_str += '              <div class="bcen_block_time">昨天</div>';
+                            div_str += '          </div>';
+                            div_str += '<a href="javascript:;" style="font-size: 5px" class="yichu">移除</a>';
+                            div_str += '       </div>';
+                            $(".bcen_jilu").append(div_str);
+                            // 将用户信息存入数据该用户的联系人中
+                            var formData1 = new FormData();
+                            formData1.set("master", getCookie("username"))
+                            formData1.set("friend", obj.data[i].username);
+                            formData1.set("friendImage", obj.data[i].usernameImage);
+                            $.ajax({
+                                url: "http://39.108.117.49/addPerson",
+                                type: "POST",
+                                dataType: "json",
+                                processData: false,
+                                contentType: false,
+                                data: formData1,
+                                success: function (obj) {
+                                    console.log(obj);
+                                },
+                                error: function () {
+                                }
+                            })
+                            // fun1();
+                            $(".bcen_block").each(function () {
+                                $(this).unbind("click");
+                                $(this).click(function () {
+                                    console.log("你点了我")
+                                    // 获取点击的用户名
+                                    var toUsername = $(this).find(".bcen_block_title").text();
+                                    $(".other").text(toUsername);
+                                    toUsername = toUsername;
+                                    // 当前用户的名字
+                                    var username = getCookie("username");
+                                    // 清空聊天界面的所有内容
+                                    $(".chatContent").empty();
+                                    var formData = new FormData();
+                                    formData.set("username", username);
+                                    formData.set("toUsername", toUsername);
+                                    $.ajax({
+                                        url: "http://39.108.117.49/queryAllMessage",
+                                        type: "POST",
+                                        dataType: "json",
+                                        processData: false,
+                                        contentType: false,
+                                        data: formData,
+                                        success: function (obj) {
+                                            console.log(obj);
+                                            for (var i = 0; i < obj.data.length; i++) {
+                                                var div_str;
+                                                if (obj.data[i].username === toUsername) {
+                                                    div_str = '<div class="brce_left">';
+                                                    div_str += '<div class="brce_left_face fl">';
+                                                    div_str += '   <img src="' + obj.data[i].usernameImage + '" style="width: 100%;height: 100%;background-size: cover"/>';
+                                                    div_str += ' </div>';
+                                                    div_str += '  <div class="brce_left_talk fl">';
+                                                    div_str += '     <div class="brce_lt_name">' + obj.data[i].username + '</div>';
+                                                    div_str += '    <div class="brce_lt_jiao fl"></div>';
+                                                    div_str += '     <div class="brce_lt_block fl">';
+                                                    div_str += '          <div>';
+                                                    if(obj.data[i].imagePath !== "") {
+                                                        div_str += '<img style="display: block" src = "'+obj.data[i].imagePath+'"/>';
+                                                    }
+                                                    div_str += obj.data[i].message ;
+                                                    div_str += '</div>';
+                                                    div_str += '      </div>';
+                                                    div_str += '  </div>';
+                                                    div_str += '   <div class="clear"></div>';
+                                                    div_str += '</div>';
+                                                } else {
+                                                    div_str = '<div class="brce_right">';
+                                                    div_str += ' <div class="brce_left_face fr">';
+                                                    div_str += '    <img src="' + getCookie("headImage") + '" style="width: 100%;height: 100%;background-size: cover"/>';
+                                                    div_str += ' </div>';
+                                                    div_str += ' <div class="brce_left_talk fr">';
+                                                    div_str += '     <div class="brce_rt_jiao fr"></div>';
+                                                    div_str += '    <div class="brce_rt_block fr">';
+                                                    div_str += '        <div>';
+                                                    if(obj.data[i].imagePath !== "") {
+                                                        div_str += '<img style="display: block" src = "'+obj.data[i].imagePath+'"/>';
+                                                    }
+                                                    div_str += obj.data[i].message;
+                                                    div_str += '</div>';
+                                                    div_str += '    </div>';
+                                                    div_str += ' </div>';
+                                                    div_str += ' <div class="clear"></div>';
+                                                    div_str += ' </div>';
+                                                }
+                                                $(".chatContent").append(div_str);
+                                                document.getElementsByClassName("brce_block_box")[0].scrollTo({
+                                                    left: 0,
+                                                    top: document.getElementsByClassName("brce_block_box")[0].scrollHeight
+                                                });
+                                            }
+                                        },
+                                        error: function () {
+                                        }
+                                    });
+                                })
+                            })
+                            fun1();
+                        }
+                        if (obj.data[i].username === $(".other").text()) {
+                            console.log("zhixing")
+                            var div_str;
+                            div_str = '<div class="brce_left">';
+                            div_str += '<div class="brce_left_face fl">';
+                            div_str += '   <img src="' + obj.data[i].usernameImage + '" style="width: 100%;height: 100%;background-size: cover"/>';
+                            div_str += ' </div>';
+                            div_str += '  <div class="brce_left_talk fl">';
+                            div_str += '     <div class="brce_lt_name">' + obj.data[i].username + '</div>';
+                            div_str += '    <div class="brce_lt_jiao fl"></div>';
+                            div_str += '     <div class="brce_lt_block fl">';
+                            div_str += '          <div>';
+                            if(obj.data[i].imagePath !== "") {
+                                div_str += '<img style="display: block" src = "'+obj.data[i].imagePath+'"/>';
+                            }
+                            div_str += obj.data[i].message;
+                            div_str += '</div>';
+                            div_str += '      </div>';
+                            div_str += '  </div>';
+                            div_str += '   <div class="clear"></div>';
+                            div_str += '</div>';
+                            $(".chatContent").append(div_str);
+                            document.getElementsByClassName("brce_block_box")[0].scrollTo({
+                                left: 0,
+                                top: document.getElementsByClassName("brce_block_box")[0].scrollHeight
+                            });
+                        }
+                    }
+                }
+            },
+            error: function () {
+                clearTimeout(t);
+            }
+        });
+    }
+
+    // 点击消息列表时，聊天窗口的内容切换
+    $(".bcen_block").each(function () {
+        $(this).unbind("click");
+        $(this).click(function () {
+            // 获取点击的用户名
+            var toUsername = $(this).find(".bcen_block_title").text();
+            $(".other").text(toUsername);
+            // 当前用户的名字
+            var username = getCookie("username");
+            // 清空聊天界面的所有内容
+            $(".chatContent").empty();
+            var formData = new FormData();
+            formData.set("username", username);
+            formData.set("toUsername", toUsername);
+            $.ajax({
+                url: "http://39.108.117.49/queryAllMessage",
+                type: "POST",
+                dataType: "json",
+                processData: false,
+                contentType: false,
+                data: formData,
+                success: function (obj) {
+                    console.log("xiaoxi2 = " + obj);
+                    console.log(obj);
+                    for (var i = 0; i < obj.data.length; i++) {
+                        console.log("i = " + i);
+                        var div_str;
+                        if (obj.data[i].username === toUsername) {
+                            div_str = '<div class="brce_left">';
+                            div_str += '<div class="brce_left_face fl">';
+                            div_str += '   <img src="' + obj.data[i].usernameImage + '" style="width: 100%;height: 100%;background-size: cover"/>';
+                            div_str += ' </div>';
+                            div_str += '  <div class="brce_left_talk fl">';
+                            div_str += '     <div class="brce_lt_name">' + obj.data[i].username + '</div>';
+                            div_str += '    <div class="brce_lt_jiao fl"></div>';
+                            div_str += '     <div class="brce_lt_block fl">';
+                            div_str += '          <div>';
+                            console.log("zhixing1");
+                            if(obj.data[i].imagePath !== "") {
+                                div_str += '<img style="display: block" src = "'+obj.data[i].imagePath+'"/>';
+                            }
+                            div_str += obj.data[i].message;
+                            div_str +=  '</div>';
+                            div_str += '      </div>';
+                            div_str += '  </div>';
+                            div_str += '   <div class="clear"></div>';
+                            div_str += '</div>';
+                        } else {
+                            div_str = '<div class="brce_right">';
+                            div_str += ' <div class="brce_left_face fr">';
+                            div_str += '    <img src="' + getCookie("headImage") + '" style="width: 100%;height: 100%;background-size: cover"/>';
+                            div_str += ' </div>';
+                            div_str += ' <div class="brce_left_talk fr">';
+                            div_str += '     <div class="brce_rt_jiao fr"></div>';
+                            div_str += '    <div class="brce_rt_block fr">';
+                            div_str += '        <div>';
+                            console.log("zhixing2");
+                            if(obj.data[i].imagePath !== "") {
+                                div_str += '<img style="display: block" src = "'+obj.data[i].imagePath+'"/>';
+                            }
+                            div_str += obj.data[i].message;
+                            div_str += '</div>';
+                            div_str += '    </div>';
+                            div_str += ' </div>';
+                            div_str += ' <div class="clear"></div>';
+                            div_str += ' </div>';
+                        }
+                        $(".chatContent").append(div_str);
+                        document.getElementsByClassName("brce_block_box")[0].scrollTo({
+                            left: 0,
+                            top: document.getElementsByClassName("brce_block_box")[0].scrollHeight
+                        });
+                    }
+                },
+                error: function () {
+                }
+            });
+        })
+    })
+
+    //获取url中的参数
+    function getUrlParam(name) {
+        //去除函数
+        String.prototype.trim = function (char, type) {
+            if (char) {
+                if (type == 'left') {
+                    return this.replace(new RegExp('^\\' + char + '+', 'g'), '');
+                } else if (type == 'right') {
+                    return this.replace(new RegExp('\\' + char + '+$', 'g'), '');
+                }
+                return this.replace(new RegExp('^\\' + char + '+|\\' + char + '+$', 'g'), '');
+            }
+            return this.replace(/^\s+|\s+$/g, '');
+        };
+        var newArray = new Array();
+        var searchUrl = window.location.search;//用法看底下
+        searchUrl = searchUrl.trim('?', 'left');
+        // searchUrl.trim('?','left');  left 去除
+        // searchUrl.trim('?','right');  right 去除
+        if (searchUrl != null) {
+            var searchData = searchUrl.split("&");//截取 url中的“&”,获得“=”后面的参数
+            if (searchData.length > 0) {
+                $.each(searchData, function (index, key) {
+                    newArray[key.split("=")[0]] = decodeURI(key.split("=")[1]);
+                })
+                if (newArray[name] == undefined || newArray[name] == null || newArray[name] == '') {
+                    return null;
+                } else {
+                    return newArray[name];
+                }
+            } else {
+                return null;
+            }
+        } else {
+            return null;
+        }
+    }
+
+    $(window).load(function () {
+        var username = getUrlParam("username");
+        if (username !== null && username !== "") {
+            var temp = checkUser(username);
+            // 判断该用户是否在消息列表中
+            if (temp !== null) {
+
+            } else {
+                var formData = new FormData();
+                formData.set("username", username);
+                // 向服务端请求该用户头像
+                $.ajax({
+                    url: "http://39.108.117.49/getUserImage",
+                    type: "POST",
+                    dataType: "json",
+                    processData: false,
+                    contentType: false,
+                    data: formData,
+                    success: function (obj) {
+                        // 将用户信息存入数据该用户的联系人中
+                        var formData1 = new FormData();
+                        formData1.set("master", getCookie("username"))
+                        formData1.set("friend", username);
+                        formData1.set("friendImage", obj.data);
+                        $.ajax({
+                            url: "http://39.108.117.49/addPerson",
+                            type: "POST",
+                            dataType: "json",
+                            processData: false,
+                            contentType: false,
+                            data: formData1,
+                            success: function (obj) {
+                                console.log(obj);
+                            },
+                            error: function () {
+                            }
+                        })
+                        temp = checkUser(username);
+                        if (temp !== null) {
+
+                        } else {
+                            var div_str = '   <div class="bcen_block">';
+                            div_str += '           <div class="bcen_block_face fl">';
+                            div_str += '               <img src="' + obj.data + '" style="width: 100%"/>';
+                            div_str += '          </div>';
+                            div_str += '         <div class="bcen_block_font fl">';
+                            div_str += '             <div class="bcen_block_title">' + username + '</div>';
+                            div_str += '            <div class="bcen_block_fonts over"></div>';
+                            div_str += '         </div>';
+                            div_str += '          <div class="bcen_block_right fr">';
+                            div_str += '              <div class="bcen_block_time">今天</div>';
+                            div_str += '          </div>';
+                            div_str += '<a href="javascript:;" style="font-size: 5px" class="yichu">移除</a>';
+                            div_str += '       </div>';
+                            $(".bcen_jilu").append(div_str);
+                            $(".yichu").each(function() {
+                                $(this).unbind("click");
+                                $(this).click(function() {
+                                    $(this).parent().remove();
+                                    var formData = new FormData();
+                                    formData.set("username", getCookie("username"));
+                                    formData.set("toUsername", $(this).siblings(".bcen_block_font").children(".bcen_block_title").text());
+                                    $.ajax({
+                                        url: "http://39.108.117.49/deleteLiaison",
+                                        type: "POST",
+                                        dataType: "json",
+                                        processData: false,
+                                        contentType: false,
+                                        data: formData,
+                                        success: function (obj) {
+                                            console.log(obj);
+                                            alert("移除成功");
+                                        },
+                                        error: function () {
+                                            // alert("发送出现异常了！！！");
+                                        }
+                                    });
+                                })
+                            })
+                            fun1();
+                            $(".bcen_block").each(function () {
+                                $(this).unbind("click");
+                                $(this).click(function () {
+                                    // 获取点击的用户名
+                                    var toUsername = $(this).find(".bcen_block_title").text();
+                                    $(".other").text(toUsername);
+                                    toUsername = toUsername;
+                                    // 当前用户的名字
+                                    var username = getCookie("username");
+                                    // 清空聊天界面的所有内容
+                                    $(".chatContent").empty();
+                                    var formData = new FormData();
+                                    formData.set("username", username);
+                                    formData.set("toUsername", toUsername);
+                                    $.ajax({
+                                        url: "http://39.108.117.49/queryAllMessage",
+                                        type: "POST",
+                                        dataType: "json",
+                                        processData: false,
+                                        contentType: false,
+                                        data: formData,
+                                        success: function (obj) {
+                                            console.log("xiaoxi = " + obj);
+                                            console.log(obj);
+                                            for (var i = 0; i < obj.data.length; i++) {
+                                                var div_str;
+                                                if (obj.data[i].username === toUsername) {
+                                                    div_str = '<div class="brce_left">';
+                                                    div_str += '<div class="brce_left_face fl">';
+                                                    div_str += '   <img src="' + obj.data[i].usernameImage + '" style="width: 100%;height: 100%;background-size: cover"/>';
+                                                    div_str += ' </div>';
+                                                    div_str += '  <div class="brce_left_talk fl">';
+                                                    div_str += '     <div class="brce_lt_name">' + obj.data[i].username + '</div>';
+                                                    div_str += '    <div class="brce_lt_jiao fl"></div>';
+                                                    div_str += '     <div class="brce_lt_block fl">';
+                                                    div_str += '          <div>';
+                                                    if(obj.data[i].imagePath !== "") {
+                                                        div_str += '<img style="display: block" src = "'+obj.data[i].imagePath+'"/>';
+                                                    }
+                                                    div_str += obj.data[i].message;
+                                                    div_str += '</div>';
+                                                    div_str += '      </div>';
+                                                    div_str += '  </div>';
+                                                    div_str += '   <div class="clear"></div>';
+                                                    div_str += '</div>';
+                                                } else {
+                                                    div_str = '<div class="brce_right">';
+                                                    div_str += ' <div class="brce_left_face fr">';
+                                                    div_str += '    <img src="' + getCookie("headImage") + '" style="width: 100%;height: 100%;background-size: cover"/>';
+                                                    div_str += ' </div>';
+                                                    div_str += ' <div class="brce_left_talk fr">';
+                                                    div_str += '     <div class="brce_rt_jiao fr"></div>';
+                                                    div_str += '    <div class="brce_rt_block fr">';
+                                                    div_str += '        <div>';
+                                                    if(obj.data[i].imagePath !== "") {
+                                                        div_str += '<img style="display: block" src = "'+obj.data[i].imagePath+'"/>';
+                                                    }
+                                                    div_str += obj.data[i].message;
+                                                    div_str += '</div>';
+                                                    div_str += '    </div>';
+                                                    div_str += ' </div>';
+                                                    div_str += ' <div class="clear"></div>';
+                                                    div_str += ' </div>';
+                                                }
+                                                $(".chatContent").append(div_str);
+                                                document.getElementsByClassName("brce_block_box")[0].scrollTo({
+                                                    left: 0,
+                                                    top: document.getElementsByClassName("brce_block_box")[0].scrollHeight
+                                                });
+                                            }
+                                        },
+                                        error: function () {
+                                        }
+                                    });
+                                })
+                            })
+                        }
+                    },
+                    error: function () {
+                        clearTimeout(t);
+                    }
+                });
+            }
+        }
+    })
+    // 移除在列表中的该元素
+    $(".yichu").each(function() {
+        $(this).unbind("click");
+        $(this).click(function() {
+            $(this).parent().remove();
+            var formData = new FormData();
+            formData.set("username", getCookie("username"));
+            formData.set("toUsername", $(this).siblings(".bcen_block_font").children(".bcen_block_title").text());
+            $.ajax({
+                url: "http://39.108.117.49/deleteLiaison",
+                type: "POST",
+                dataType: "json",
+                processData: false,
+                contentType: false,
+                data: formData,
+                success: function (obj) {
+                    console.log(obj);
+                    alert("移除成功");
+                },
+                error: function () {
+                    // alert("发送出现异常了！！！");
+                }
+            });
+        })
+    })
+
+    $(".fl>img").each(function() {
+        $(this).click(function() {
+            SendImagePath = $(this).attr('src');
+            $('.tupian1').attr('src', $(this).attr('src'));
+            document.getElementsByClassName("shan")[0].style.display="inline";
+        })
+    })
+</script>
+</html>
